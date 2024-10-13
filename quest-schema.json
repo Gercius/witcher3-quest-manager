@@ -1,0 +1,18 @@
+[
+    {
+        "location": "",
+        "questInfo": {
+            "name": "",
+            "hyperlink": "",
+            "type": "",
+            "isCompleted": false
+        },
+        "extraDetails": [
+            {
+                "description": "",
+                "hyperlink": "",
+                "isCompleted": false
+            }
+        ]
+    }
+]
