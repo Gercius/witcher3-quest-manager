@@ -4,23 +4,19 @@ const excelFilePath = "data.xlsx";
 
 const workbook = new ExcelJS.Workbook();
 const quests = [];
+let quest = null;
+let currentQuestName = null;
 
-let quest = {
-    location: "",
-    questInfo: {
-        name: "",
-        hyperlink: "",
-        type: "",
-        isCompleted: false,
-    },
-    extraDetails: [
-        {
-            description: "",
-            hyperlink: "",
-            isCompleted: false,
-        },
-    ],
-};
+// let quest = {
+//     location: "",
+//     questInfo: {
+//         name: "",
+//         hyperlink: "",
+//         type: "",
+//         isCompleted: false,
+//     },
+//     extraDetails: [],
+// };
 
 workbook.xlsx.readFile(excelFilePath).then(() => {
     const worksheet = workbook.getWorksheet(2);
@@ -29,53 +25,72 @@ workbook.xlsx.readFile(excelFilePath).then(() => {
     const rows = worksheet.getRows(2, worksheet.rowCount);
 
     for (let i = 0; i < rows.length; i++) {
+        console.log("quests.length", quests.length);
+
         const row = rows[i];
-
-        const location = row.getCell(1).value;
-        console.log(location);
-
-        const questInfo = row.getCell(2).value;
-        const questCompleted = row.getCell(3).value;
+        const locationRaw = row.getCell(1).value;
+        const questInfo = row.getCell(2);
         const extraDetails = row.getCell(4).value;
-        const extraDetailsCompleted = row.getCell(6).value;
 
-        // break;
+        const questName = questInfo.value.text;
+        const questHyperlink = questInfo.value.hyperlink;
+        const questCellFillValue = questInfo.fill?.bgColor.argb;
+        const questType = questCellFillValue ? getQuestType(questCellFillValue) : "";
 
-        // const name = questInfo.text;
-        // const hyperlink = questInfo.hyperlink;
-        // const questCellFillValue = questInfo.fill.bgColor.argb;
-        // const questType = getQuestType(questCellFillValue);
+        if (currentQuestName && currentQuestName !== questName) {
+            // Push the completed quest to the quests array
+            quests.push(quest);
 
-        // console.log(questType);
+            // Start a new quest
+            quest = {
+                location: toCapitalCase(locationRaw),
+                questInfo: {
+                    name: questName,
+                    hyperlink: questHyperlink,
+                    type: questType,
+                    isCompleted: false,
+                },
+                extraDetails: [],
+            };
+        }
 
-        // break;
+        if (!quest) {
+            quest = {
+                location: toCapitalCase(locationRaw),
+                questInfo: {
+                    name: questName,
+                    hyperlink: questHyperlink,
+                    type: questType,
+                    isCompleted: false,
+                },
+                extraDetails: [],
+            };
+            currentQuestName = questName;
+        }
 
-        // const quest = row.getCell(2).value.text;
+        if (extraDetails) {
+            const extraDetailsDescription = extraDetails.text || extraDetails;
+            const extraDetailsHyperlink = extraDetails.hyperlink || "";
 
-        // if (!quest && details) {
-        //     quest.details.push(details);
-        //     continue;
-        // }
+            quest.extraDetails.push({
+                description: extraDetailsDescription,
+                hyperlink: extraDetailsHyperlink,
+                isCompleted: false,
+            });
+        }
 
-        // If there is a new quest, push the previous quest and start a new one
-        // if (quest.quest) {
-        //     quests.push(quest);
-        // }
+        if (i === rows.length - 1) {
+            quests.push(quest);
+        }
 
-        // quest = {
-        //     location: location || "",
-        //     quest: name || "",
-        //     details: [],
-        // };
+        if (quests.length >= 1) {
+            const kekw = JSON.stringify(quests[0], undefined, 2);
+            console.log(kekw);
 
-        // if (details) {
-        //     quest.details.push(details);
-        // }
+            break;
+        }
 
-        // console.log(quest);
-
-        // break;
-        // if (quests.length > 40) break;
+        currentQuestName = questName;
     }
 });
 
@@ -86,7 +101,7 @@ function toCapitalCase(str) {
 }
 
 function getQuestType(cellFillValue) {
-    console.log(cellFillValue);
+    if (!cellFillValue) return "";
 
     const questTypes = {
         FFE06666: "Main Quest",
