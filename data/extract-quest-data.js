@@ -14,24 +14,6 @@ workbook.xlsx.readFile(excelFilePath).then(() => {
 
     const rows = worksheet.getRows(2, worksheet.rowCount);
 
-    // let shitQuests = [];
-    // for (let i = 0; i < rows.length; i++) {
-    //     const row = rows[i];
-
-    //     const locationRaw = row.getCell(1).value;
-    //     const questInfo = row.getCell(2);
-    //     const extraDetails = row.getCell(4).value;
-
-    // if (i === 456) {
-    // if (!locationRaw) {
-    //     console.log(i);
-    //     console.log(questInfo.value);
-    //     console.log(locationRaw);
-    //     break;
-    // }
-    // break;
-    // }
-
     for (let i = 0; i < rows.length; i++) {
         try {
             const row = rows[i];
