@@ -1,16 +1,19 @@
 {
-    "name": "witcher",
+    "name": "witcher3-quest-order",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "css": "sass --watch styles/sass:styles/css",
+        "dev": "npm run css"
     },
     "keywords": [],
-    "author": "",
+    "author": "gercius",
     "license": "ISC",
     "description": "",
     "dependencies": {
-        "exceljs": "^4.4.0",
-        "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+        "exceljs": "^4.4.0"
+    },
+    "devDependencies": {
+        "sass": "^1.80.1"
     }
 }
