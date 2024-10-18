@@ -1,3 +1,5 @@
+import { questData } from "./data.js";
+
 const body = document.querySelector("body");
 const toggleThemeButton = document.querySelector(".theme-switch input");
 
