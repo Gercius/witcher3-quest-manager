@@ -1,17 +1,6 @@
 import { questData } from "./data.js";
 
-const body = document.querySelector("body");
-const toggleThemeButton = document.querySelector(".theme-switch input");
+const table = document.querySelector("main table");
 
-// Set OS prefered theme on load
-window.onload = () => {
-    const preferDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    preferDarkTheme ? body.classList.add("dark-theme") : "";
-    preferDarkTheme ? (toggleThemeButton.checked = true) : (toggleThemeButton.checked = false);
-};
-
-toggleThemeButton.addEventListener("click", toggleTheme);
-
-function toggleTheme() {
-    toggleThemeButton.checked ? body.classList.add("dark-theme") : body.classList.remove("dark-theme");
-}
+const data = questData[0];
+console.log(table);
