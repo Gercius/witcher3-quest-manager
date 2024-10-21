@@ -81,3 +81,17 @@ header {
         transform: translateX(20px);
     }
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+td {
+    padding: 0.25rem 0.5rem;
+}
