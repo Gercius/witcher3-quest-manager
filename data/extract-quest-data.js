@@ -1,7 +1,7 @@
 const ExcelJS = require("exceljs");
 const fs = require("node:fs");
 
-const excelFilePath = "data.xlsx";
+const excelFilePath = "data/data.xlsx";
 
 const workbook = new ExcelJS.Workbook();
 const quests = [];
@@ -111,8 +111,12 @@ function capitalizeLocationStr(string) {
 function handleExtraDetailsRichText(extraDetails) {
     let extraDetailsDescription;
 
-    if (extraDetails?.text?.richText) {
-        extraDetailsDescription = extraDetails.text.richText.text;
+    if (extraDetails?.text?.richText?.length > 1) {
+        extraDetailsDescription = extraDetails.text.richText.reduce((string, currRichTextObj) => {
+            return string + currRichTextObj.text;
+        }, "");
+    } else if (extraDetails?.text?.richText) {
+        extraDetailsDescription = extraDetails.text.richText;
     } else if (extraDetails?.text) {
         extraDetailsDescription = extraDetails.text;
     } else {

@@ -118,22 +118,27 @@ table {
 
 th {
   font-weight: bold;
+  text-align: center;
 }
 
 td,
 th {
   padding: 6px;
   border: 1px solid;
-  text-align: left;
 }
 
 td {
+  text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
 }
 
-.description-link {
+td.quest-completed {
+  text-align: center;
+}
+
+td a.description-link {
   word-break: break-all;
 }
 
@@ -187,6 +192,9 @@ tr .extra-detail {
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
+  }
+  td.quest-completed {
+    text-align: unset;
   }
   /*
   Label the data
