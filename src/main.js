@@ -1,63 +1,72 @@
 import { questData } from "./data.js";
 
-const tbody = document.querySelector("main table tbody");
+function main() {
+    const tbody = document.querySelector("main table tbody");
+    const quests = questData;
 
-const quests = questData;
-console.log(quests[1]);
-console.log(quests[1].extraDetails.length);
+    for (const quest of quests) {
+        const parentTr = document.createElement("tr");
+        parentTr.classList.add("quest");
 
-if (quests[10].extraDetails.length) console.log("nice");
+        const locationTd = document.createElement("td");
+        locationTd.textContent = quest.location;
+        locationTd.rowSpan = quest.extraDetails.length || 1;
+        parentTr.append(locationTd);
 
-for (const quest of quests) {
-    const parentTr = document.createElement("tr");
-    parentTr.classList.add("quest");
+        const nameTd = document.createElement("td");
+        nameTd.classList.add("quest-name");
+        const questLink = document.createElement("a");
+        questLink.classList.add("quest-link");
+        questLink.textContent = quest.questInfo.name;
+        questLink.setAttribute("href", quest.questInfo.hyperlink);
+        nameTd.append(questLink);
+        nameTd.rowSpan = quest.extraDetails.length || 1;
+        parentTr.append(nameTd);
 
-    const locationTd = document.createElement("td");
-    locationTd.textContent = quest.location;
-    locationTd.rowSpan = quest.extraDetails.length || 1;
-    parentTr.append(locationTd);
+        const isCompletedTd = document.createElement("td");
+        isCompletedTd.classList.add("quest-completed");
+        const isCompletedCheckbox = document.createElement("input");
+        isCompletedCheckbox.type = "checkbox";
+        isCompletedTd.append(isCompletedCheckbox);
+        isCompletedTd.rowSpan = quest.extraDetails.length || 1;
+        parentTr.append(isCompletedTd);
 
-    const nameTd = document.createElement("td");
-    nameTd.textContent = quest.questInfo.name;
-    nameTd.rowSpan = quest.extraDetails.length || 1;
-    parentTr.append(nameTd);
+        // Add the first extra detail (or placeholder if none)
+        const firstExtraDetailTd = getProperExtraDetail(quest.extraDetails, true);
+        parentTr.append(firstExtraDetailTd);
+        tbody.append(parentTr);
 
-    const isCompletedTd = document.createElement("td");
-    isCompletedTd.classList.add("quest-completed");
-    const isCompletedCheckbox = document.createElement("input");
-    isCompletedCheckbox.type = "checkbox";
-    isCompletedTd.append(isCompletedCheckbox);
-    isCompletedTd.rowSpan = quest.extraDetails.length || 1;
-    parentTr.append(isCompletedTd);
-
-    // Add the first extra detail (or placeholder if none)
-    const firstExtraDetail = quest.extraDetails.length ? quest.extraDetails[0].description : "";
-    const firstExtraDetailTd = document.createElement("td");
-    firstExtraDetailTd.classList.add("extra-detail");
-    firstExtraDetailTd.textContent = firstExtraDetail;
-    parentTr.append(firstExtraDetailTd);
-
-    tbody.append(parentTr);
-
-    // Add additional rows for remaining extra details, if any
-    if (quest.extraDetails.length > 1) {
-        for (let i = 1; i < quest.extraDetails.length; i++) {
-            const extraDetailTr = document.createElement("tr");
-
-            const extraDetailsTd = document.createElement("td");
-            extraDetailsTd.classList.add("extra-detail");
-            if (quest.extraDetails[i].hyperlink) {
-                const link = document.createElement("a");
-                link.classList.add("description-link");
-                link.textContent = quest.extraDetails[i].hyperlink;
-                link.setAttribute("href", quest.extraDetails[i].hyperlink);
-                extraDetailsTd.append(link);
-            } else {
-                extraDetailsTd.textContent = quest.extraDetails[i].description;
+        // Add additional rows for remaining extra details, if any
+        if (quest.extraDetails.length > 1) {
+            for (let i = 1; i < quest.extraDetails.length; i++) {
+                const extraDetailTr = document.createElement("tr");
+                const extraDetailsTd = getProperExtraDetail(quest.extraDetails, false, i);
+                extraDetailTr.append(extraDetailsTd);
+                tbody.append(extraDetailTr);
             }
-            extraDetailTr.append(extraDetailsTd);
-
-            tbody.append(extraDetailTr);
         }
     }
+}
+main();
+
+function getProperExtraDetail(extraDetails, firstDetail = false, index) {
+    const extraDetailTd = document.createElement("td");
+    extraDetailTd.classList.add("extra-detail");
+    if (extraDetails[firstDetail ? 0 : index]?.hyperlink && extraDetails[firstDetail ? 0 : index].description) {
+        const extraDetailLink = document.createElement("a");
+        extraDetailLink.classList.add("extra-detail-link");
+        extraDetailLink.textContent = extraDetails[firstDetail ? 0 : index].description;
+        extraDetailLink.setAttribute("href", extraDetails[firstDetail ? 0 : index].hyperlink);
+        extraDetailTd.append(extraDetailLink);
+    } else if (extraDetails[firstDetail ? 0 : index]?.hyperlink && !extraDetails[firstDetail ? 0 : index].description) {
+        const extraDetailLink = document.createElement("a");
+        extraDetailLink.classList.add("extra-detail-link");
+        extraDetailLink.textContent = extraDetails[firstDetail ? 0 : index].hyperlink;
+        extraDetailLink.setAttribute("href", extraDetails[firstDetail ? 0 : index].hyperlink);
+        extraDetailTd.append(extraDetailLink);
+    } else {
+        extraDetailTd.textContent = extraDetails[firstDetail ? 0 : index]?.description;
+    }
+
+    return extraDetailTd;
 }
