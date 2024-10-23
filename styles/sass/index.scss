@@ -16,6 +16,7 @@ body {
 }
 
 // Utility classes
+
 .hidden {
     display: none;
 }
@@ -39,16 +40,24 @@ header {
     }
 
     .menu {
-        width: 100px;
+        width: 0;
         background: salmon;
         color: white;
         position: absolute;
         top: 3rem;
         right: 0;
         z-index: 9999;
+        transition: width 0.2s;
+        overflow: hidden;
+    }
+
+    .menu li p {
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     // THEME SWITCH BUTTON
+
     .theme-switch {
         position: relative;
         display: inline-block;

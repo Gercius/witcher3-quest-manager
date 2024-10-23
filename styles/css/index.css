@@ -76,13 +76,19 @@ header .menu-button {
   align-items: center;
 }
 header .menu {
-  width: 100px;
+  width: 0;
   background: salmon;
   color: white;
   position: absolute;
   top: 3rem;
   right: 0;
   z-index: 9999;
+  transition: width 0.2s;
+  overflow: hidden;
+}
+header .menu li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 header .theme-switch {
   position: relative;
