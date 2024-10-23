@@ -25,9 +25,30 @@ body {
 header {
     background-color: salmon;
     height: 50px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .menu-button {
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        width: 100px;
+        background: salmon;
+        color: white;
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        z-index: 9999;
+    }
 
     // THEME SWITCH BUTTON
-
     .theme-switch {
         position: relative;
         display: inline-block;
@@ -109,15 +130,15 @@ td.quest-completed {
     text-align: center;
 }
 
-td a.description-link {
-    word-break: break-all;
+td a.extra-detail-link {
+    word-break: break-word;
 }
 
 tr .extra-detail {
     min-height: 20px;
 }
 
-// Make tables responsive https://css-tricks.com/responsive-data-tables/
+// Make table responsive https://css-tricks.com/responsive-data-tables/
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
     /* Force table to not be like tables anymore */
     table,

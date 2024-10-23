@@ -9,10 +9,27 @@
     <body>
         <div class="container">
             <header>
-                <label class="theme-switch">
-                    <input type="checkbox" />
-                    <span class="slider round"></span>
-                </label>
+                <p>Completed <span class="completed-percentege">69</span>%</p>
+                <button type="button" name="menu" class="menu-button">
+                    <img src="./assets/menu.svg" alt="" />
+                    <img class="hidden" src="./assets/close.svg" alt="" />
+                </button>
+                <ul class="menu hidden">
+                    <li>
+                        <label class="theme-switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                            theme
+                        </label>
+                    </li>
+                    <li>
+                        <label class="theme-switch">
+                            <input type="checkbox" />
+                            <span class="slider round"></span>
+                            theme
+                        </label>
+                    </li>
+                </ul>
             </header>
             <main>
                 <table>
@@ -31,5 +48,6 @@
 
         <script src="src/main.js" type="module"></script>
         <script src="src/themes.js"></script>
+        <script src="src/menu.js"></script>
     </body>
 </html>

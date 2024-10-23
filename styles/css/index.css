@@ -63,6 +63,26 @@ body {
 header {
   background-color: salmon;
   height: 50px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .menu-button {
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+header .menu {
+  width: 100px;
+  background: salmon;
+  color: white;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  z-index: 9999;
 }
 header .theme-switch {
   position: relative;
@@ -138,8 +158,8 @@ td.quest-completed {
   text-align: center;
 }
 
-td a.description-link {
-  word-break: break-all;
+td a.extra-detail-link {
+  word-break: break-word;
 }
 
 tr .extra-detail {
