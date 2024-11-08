@@ -2,15 +2,19 @@ import { questData } from "./data.js";
 
 (function main() {
     populateQuestTable();
-    renderQuestCompletion();
+    handleToggleQuestCompletion();
 })();
 
 function populateQuestTable() {
     const tbody = document.querySelector("main table tbody");
     const quests = questData;
 
-    for (const quest of quests) {
+    for (let i = 0; i < quests.length; i++) {
+        const quest = quests[i];
+
         const parentTr = document.createElement("tr");
+        parentTr.setAttribute("data-id", i);
+        parentTr.setAttribute("data-completed", false);
         parentTr.classList.add("quest");
 
         const locationTd = document.createElement("td");
@@ -43,9 +47,10 @@ function populateQuestTable() {
 
         // Add additional rows for remaining extra details, if any
         if (quest.extraDetails.length > 1) {
-            for (let i = 1; i < quest.extraDetails.length; i++) {
+            for (let j = 1; j < quest.extraDetails.length; j++) {
                 const extraDetailTr = document.createElement("tr");
-                const extraDetailsTd = getProperExtraDetail(quest.extraDetails, false, i);
+                extraDetailTr.setAttribute("data-id", i);
+                const extraDetailsTd = getProperExtraDetail(quest.extraDetails, false, j);
                 extraDetailTr.append(extraDetailsTd);
                 tbody.append(extraDetailTr);
             }
@@ -79,22 +84,44 @@ function populateQuestTable() {
     }
 }
 
-function renderQuestCompletion() {
-    const completedEl = document.querySelector(".completed-percentege");
+function handleToggleQuestCompletion() {
     const table = document.querySelector("table");
-    const toggleCompletedCheckboxes = Array.from(document.querySelectorAll(".quest-completed input"));
 
-    calculateQuestsCompleted();
+    renderCompletedPercentage();
 
     table.addEventListener("click", (e) => {
-        calculateQuestsCompleted();
+        updateQuestElementAttribute(e.target);
     });
 
-    function calculateQuestsCompleted() {
+    function renderCompletedPercentage() {
+        // todo - make calculation from dataset porperty instead of checkbox value
+        const toggleCompletedCheckboxes = Array.from(document.querySelectorAll(".quest-completed input"));
         const totalQuests = toggleCompletedCheckboxes.length;
         const totalCompleted = toggleCompletedCheckboxes.filter((checkbox) => checkbox.checked === true).length;
         const percentege = ((totalCompleted / totalQuests) * 100).toFixed(1);
-        completedEl.textContent = percentege;
+
+        const completedHeaderEl = document.querySelector(".completed-percentege");
+        completedHeaderEl.textContent = percentege;
+    }
+
+    function updateQuestElementAttribute(targetEl) {
+        if (targetEl.matches(".quest-completed input")) {
+            const primaryQuestRow = targetEl.closest("tr");
+            const isCompleted = targetEl.checked;
+            primaryQuestRow.setAttribute("data-completed", isCompleted.toString());
+            renderCompletedPercentage();
+            saveStateToLocalStorage();
+        }
+    }
+
+    function saveStateToLocalStorage() {
+        const questsEl = document.querySelectorAll("tr.quest");
+        questsEl.forEach((questEl) => {
+            const id = questEl.dataset.id;
+            const isCompleted = questEl.dataset.completed;
+            const questStorageKey = id;
+            localStorage.setItem(questStorageKey, isCompleted);
+        });
     }
 
     // function completeAll() {
