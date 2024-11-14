@@ -94,6 +94,7 @@ function handleToggleQuestCompletion() {
                 quests.push({ id, isCompleted });
 
                 const checkbox = questEl.querySelector(".quest-completed input");
+
                 if (checkbox) {
                     checkbox.checked = isCompleted;
                 }
@@ -101,24 +102,22 @@ function handleToggleQuestCompletion() {
             return quests;
         },
         save: (targetEl) => {
-            if (targetEl.matches(".quest-completed input")) {
-                const primaryQuestRow = targetEl.closest("tr");
-                const isCompleted = targetEl.checked;
-                const questStorageKey = primaryQuestRow.dataset.id;
-                localStorage.setItem(questStorageKey, isCompleted);
-            }
+            const primaryQuestRow = targetEl.closest("tr");
+            const isCompleted = targetEl.checked;
+            const questStorageKey = primaryQuestRow.dataset.id;
+            localStorage.setItem(questStorageKey, isCompleted);
         },
     };
     const table = document.querySelector("table");
 
-    document.addEventListener("DOMContentLoaded", () => {
-        manageState.get();
-        renderCompletedPercentage();
-    });
+    manageState.get();
+    renderCompletedPercentage();
 
     table.addEventListener("click", (e) => {
-        manageState.save(e.target);
-        renderCompletedPercentage();
+        if (e.target.matches(".quest-completed input")) {
+            manageState.save(e.target);
+            renderCompletedPercentage();
+        }
     });
 
     function renderCompletedPercentage() {
