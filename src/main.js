@@ -1,4 +1,4 @@
-import { questData } from "./data.js";
+import { questData } from "./utils.js";
 
 (function main() {
     populateQuestTable();
