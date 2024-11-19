@@ -1,6 +1,6 @@
-const downloadButton = document.querySelector(".download-quest-data");
+const exportButton = document.querySelector(".export-quest-data");
 
-downloadButton.addEventListener("click", () => {
+exportButton.addEventListener("click", () => {
     if (window.confirm("Export quest data?")) {
         const data = getQuestData();
         exportQuestData(data, "quest-data.json");
