@@ -53,20 +53,38 @@ function getQuestData() {
 }
 
 /* 
-    IMPORT 
+    IMPORT
+    Reference https://openjavascript.info/2022/12/15/read-a-file-into-javascript-using-filereader/ 
 */
 const fileInput = document.querySelector(".import-quest-data");
-console.log(fileInput);
 
-fileInput.addEventListener("click", () => {
-    console.log("kekw");
-
+fileInput.addEventListener("change", () => {
     const fr = new FileReader();
 
     fr.readAsText(fileInput.files[0]);
 
     fr.addEventListener("load", () => {
-        const data = fr.result;
-        console.log(JSON.parse(data));
+        if (window.confirm("Import quest data?")) {
+            try {
+                const data = fr.result;
+                const parsedImportData = JSON.parse(data);
+                const questsEl = document.querySelectorAll("tbody tr.quest");
+
+                parsedImportData.forEach((importObj) => {
+                    for (const questEl of questsEl) {
+                        const id = questEl.dataset.id;
+                        let isCompletedCheckbox = questEl.querySelector(".quest-completed input");
+
+                        if (importObj.id === id) {
+                            isCompletedCheckbox.checked = importObj.isCompleted ? true : false;
+                        }
+                    }
+                });
+            } catch (error) {
+                alert("Please import correct data");
+            }
+        } else {
+            fileInput.value = "";
+        }
     });
 });
