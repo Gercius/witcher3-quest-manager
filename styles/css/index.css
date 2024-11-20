@@ -54,6 +54,7 @@ svg {
 body {
   background-color: var(--bg);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 .hidden {
@@ -76,15 +77,18 @@ header .menu-button {
   align-items: center;
 }
 header .menu {
-  width: 0;
+  width: 250px;
   background: salmon;
   color: white;
   position: absolute;
   top: 3rem;
-  right: 0;
+  right: -250px;
   z-index: 9999;
-  transition: width 0.2s;
+  transition: right 0.2s ease;
   overflow: hidden;
+}
+header .menu-show {
+  right: 0;
 }
 header .menu li p {
   overflow: hidden;

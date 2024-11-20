@@ -8,8 +8,7 @@ export function handleMenu() {
             img.classList.contains("hidden") ? img.classList.remove("hidden") : img.classList.add("hidden");
         });
 
-        const width = menu.style.width;
-
-        width === "0px" || !width ? (menu.style.width = "250px") : (menu.style.width = "0px");
+        const right = menu.style.right;
+        right === "-250px" || !right ? (menu.style.right = "0px") : (menu.style.right = "-250px");
     });
 }
