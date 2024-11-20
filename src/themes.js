@@ -1,4 +1,4 @@
-(function handleThemes() {
+export function handleThemes() {
     const body = document.querySelector("body");
     const toggleThemeButton = document.querySelector(".theme-switch input");
     const themeStorageKey = "preferred-theme";
@@ -26,4 +26,4 @@
             localStorage.setItem(themeStorageKey, "light");
         }
     }
-})();
+}

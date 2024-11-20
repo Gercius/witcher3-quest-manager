@@ -1,3 +1,6 @@
+/* 
+    EXPORT 
+*/
 const exportButton = document.querySelector(".export-quest-data");
 
 exportButton.addEventListener("click", () => {
@@ -48,3 +51,22 @@ function getQuestData() {
     const jsonBlob = new Blob([jsonString], { type: "application/json" });
     return jsonBlob;
 }
+
+/* 
+    IMPORT 
+*/
+const fileInput = document.querySelector(".import-quest-data");
+console.log(fileInput);
+
+fileInput.addEventListener("click", () => {
+    console.log("kekw");
+
+    const fr = new FileReader();
+
+    fr.readAsText(fileInput.files[0]);
+
+    fr.addEventListener("load", () => {
+        const data = fr.result;
+        console.log(JSON.parse(data));
+    });
+});
