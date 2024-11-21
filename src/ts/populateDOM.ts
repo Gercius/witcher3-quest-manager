@@ -2,13 +2,18 @@ import { getData } from "./utils.js";
 
 export async function populateQuestTable() {
     const tbody = document.querySelector("main table tbody");
+    if (!tbody) {
+        console.error("Tbody not found!");
+        return;
+    }
+
     const quests = await getData();
 
     for (let i = 0; i < quests.length; i++) {
         const quest = quests[i];
 
         const parentTr = document.createElement("tr");
-        parentTr.setAttribute("data-id", i);
+        parentTr.setAttribute("data-id", i.toString());
         parentTr.classList.add("quest");
 
         const locationTd = document.createElement("td");
@@ -34,6 +39,14 @@ export async function populateQuestTable() {
         isCompletedTd.rowSpan = quest.extraDetails.length || 1;
         parentTr.append(isCompletedTd);
 
+        [
+            {
+                description: "-Complete before the Isle of Mists.",
+                hyperlink: "",
+                isCompleted: false,
+            },
+        ];
+
         // Add the first extra detail (or placeholder if none)
         const firstExtraDetailTd = getProperExtraDetail(quest.extraDetails, true);
         parentTr.append(firstExtraDetailTd);
@@ -43,7 +56,7 @@ export async function populateQuestTable() {
         if (quest.extraDetails.length > 1) {
             for (let j = 1; j < quest.extraDetails.length; j++) {
                 const extraDetailTr = document.createElement("tr");
-                extraDetailTr.setAttribute("data-id", i);
+                extraDetailTr.setAttribute("data-id", i.toString());
                 const extraDetailsTd = getProperExtraDetail(quest.extraDetails, false, j);
                 extraDetailTr.append(extraDetailsTd);
                 tbody.append(extraDetailTr);
@@ -51,8 +64,14 @@ export async function populateQuestTable() {
         }
     }
 
+    interface ExtraDetails {
+        description: string;
+        hyperlink: string;
+        isCompleted: boolean;
+    }
+
     // todo - refactor probably
-    function getProperExtraDetail(extraDetails, firstDetail = false, index) {
+    function getProperExtraDetail(extraDetails: ExtraDetails[], firstDetail = false, index = 0) {
         const extraDetailTd = document.createElement("td");
         extraDetailTd.classList.add("extra-detail");
         if (extraDetails[firstDetail ? 0 : index]?.hyperlink && extraDetails[firstDetail ? 0 : index].description) {

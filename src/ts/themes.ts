@@ -1,7 +1,12 @@
 export function handleThemes() {
-    const body = document.querySelector("body");
-    const toggleThemeButton = document.querySelector(".theme-switch input");
+    const body = document.querySelector<HTMLBodyElement>("body");
+    const toggleThemeButton = document.querySelector<HTMLInputElement>(".theme-switch input");
     const themeStorageKey = "preferred-theme";
+
+    if (!body || !toggleThemeButton) {
+        console.error("Body or toggleThemeButton not found!");
+        return;
+    }
 
     // Set OS prefered theme on load
     const storedTheme = localStorage.getItem(themeStorageKey);
@@ -18,6 +23,11 @@ export function handleThemes() {
     toggleThemeButton.addEventListener("click", toggleTheme);
 
     function toggleTheme() {
+        if (!body || !toggleThemeButton) {
+            console.error("Body or toggleThemeButton not found!");
+            return;
+        }
+
         if (toggleThemeButton.checked) {
             body.classList.add("dark-theme");
             localStorage.setItem(themeStorageKey, "dark");
