@@ -15,22 +15,17 @@ export function handleToggleQuestCompletion() {
                     return;
                 }
 
-                const isCompleted = localStorage.getItem(id);
-                if (!isCompleted) {
-                    console.error("Quest completion state not found!");
-                    return;
-                }
+                const isCompletedUnparsed = localStorage.getItem(id);
+                let isCompleted = isCompletedUnparsed === "true" ? true : false;
 
-                const isCompletedd = JSON.parse(isCompleted);
-                quests.push({ id: id ? id : "", isCompleted: isCompletedd });
+                quests.push({ id: id ? id : "", isCompleted });
 
                 const checkbox = questEl.querySelector<HTMLInputElement>(".quest-completed input");
 
                 if (checkbox) {
-                    checkbox.checked = isCompletedd;
+                    checkbox.checked = isCompleted;
                 }
             });
-            console.log(quests);
 
             return quests;
         },
