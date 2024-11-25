@@ -1,3 +1,12 @@
+import { manageState } from "./manageState";
+import { renderCompletedPercentage } from "./render";
+
+interface QuestInfo {
+    id: string;
+    name: string;
+    isCompleted: boolean;
+}
+
 /* 
     EXPORT 
 */
@@ -36,12 +45,6 @@
         document.body.removeChild(link);
     }
 
-    interface QuestInfo {
-        id: string;
-        name: string;
-        isCompleted: boolean;
-    }
-
     function getQuestData() {
         const quests: NodeListOf<HTMLElement> = document.querySelectorAll(".quest");
         const data: QuestInfo[] = [];
@@ -60,6 +63,7 @@
 
         const jsonString = JSON.stringify(data, null, 2);
         const jsonBlob = new Blob([jsonString], { type: "application/json" });
+
         return jsonBlob;
     }
 })();
@@ -92,12 +96,6 @@
                         const parsedImportData = JSON.parse(data);
                         const questsEl: NodeListOf<HTMLElement> = document.querySelectorAll("tbody tr.quest");
 
-                        interface QuestInfo {
-                            id: string;
-                            name: string;
-                            isCompleted: boolean;
-                        }
-
                         parsedImportData.forEach((importObj: QuestInfo) => {
                             for (const questEl of questsEl) {
                                 const id = questEl.dataset.id;
@@ -117,6 +115,8 @@
                     } catch (error) {
                         alert("Please import correct data");
                     }
+                    manageState.save();
+                    renderCompletedPercentage();
                 } else {
                     fileInput.value = "";
                 }

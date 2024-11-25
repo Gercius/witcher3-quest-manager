@@ -1,51 +1,7 @@
+import { manageState } from "./manageState";
+import { renderCompletedPercentage } from "./render";
+
 export function handleToggleQuestCompletion() {
-    const manageState = {
-        get: () => {
-            const questsEl: NodeListOf<HTMLElement> = document.querySelectorAll("tr.quest");
-
-            interface Quest {
-                id: string;
-                isCompleted: boolean | null;
-            }
-            const quests: Quest[] = [];
-            questsEl.forEach((questEl) => {
-                const id = questEl.dataset.id;
-                if (typeof id !== "string") {
-                    console.error("id must be string!");
-                    return;
-                }
-
-                const isCompletedUnparsed = localStorage.getItem(id);
-                let isCompleted = isCompletedUnparsed === "true" ? true : false;
-
-                quests.push({ id: id ? id : "", isCompleted });
-
-                const checkbox = questEl.querySelector<HTMLInputElement>(".quest-completed input");
-
-                if (checkbox) {
-                    checkbox.checked = isCompleted;
-                }
-            });
-
-            return quests;
-        },
-        save: (targetEl: HTMLElement) => {
-            const primaryQuestRow = targetEl.closest("tr");
-            if (!primaryQuestRow) {
-                console.error("Primary quest row element not found!");
-                return;
-            }
-
-            const isCompleted = (targetEl as HTMLInputElement).checked;
-            const questStorageKey = primaryQuestRow.dataset.id;
-            if (!questStorageKey || typeof questStorageKey !== "string") {
-                console.error("Quest storage key is of incorrect type or not found!");
-                return;
-            }
-
-            localStorage.setItem(questStorageKey, isCompleted.toString());
-        },
-    };
     const table = document.querySelector("table");
     if (!table) {
         console.error("Table element not found!");
@@ -66,36 +22,8 @@ export function handleToggleQuestCompletion() {
         }
 
         if (clickedEl.matches(".quest-completed input")) {
-            manageState.save(clickedEl);
+            manageState.save();
             renderCompletedPercentage();
         }
     });
-
-    function renderCompletedPercentage() {
-        const questsData = manageState.get();
-        const totalQuests = questsData.length;
-        const totalCompleted = questsData.filter((quest) => quest.isCompleted === true).length;
-        const percentege = ((totalCompleted / totalQuests) * 100).toFixed(1);
-        const completedHeaderEl = document.querySelector(".completed-percentege");
-        if (!completedHeaderEl) {
-            console.error("Completed percentage showing element not found!");
-            return;
-        }
-        completedHeaderEl.textContent = percentege;
-    }
-
-    // function completeAll() {
-    //     toggleCompletedCheckboxes.forEach((cb) => {
-    //         cb.checked = true;
-    //     });
-
-    //     const totalQuests = toggleCompletedCheckboxes.length;
-    //     const totalCompleted = toggleCompletedCheckboxes.filter((checkbox) => checkbox.checked === true).length;
-    //     const percentege = (totalCompleted / totalQuests) * 100;
-
-    //     console.log(totalQuests);
-    //     console.log(completed);
-    //     console.log(percentege, "%");
-    //     console.log(percentege.toFixed(1), "%");
-    // }
 }
