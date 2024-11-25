@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "concurrently \"vite\" \"npm run css\"",
-        "build": "tsc && vite build",
+        "build": "tsc && vite build --base=./",
         "preview": "vite preview",
         "css": "sass --watch src/styles/sass:src/styles/css"
     },
