@@ -1,5 +1,5 @@
 export async function getData() {
-    const url = "../data/quests.json";
+    const url = "data/quests.json";
     try {
         const response = await fetch(url);
         if (!response.ok) {
