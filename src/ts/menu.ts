@@ -10,7 +10,7 @@ export function handleMenu() {
 
     menuButton.addEventListener("click", () => {
         menuButtonImages.forEach((img) => {
-            img.classList.contains("hidden") ? img.classList.remove("hidden") : img.classList.add("hidden");
+            img.classList.toggle("hidden");
         });
 
         const right = menu.style.right;
