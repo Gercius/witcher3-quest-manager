@@ -39,14 +39,6 @@ export async function populateQuestTable() {
         isCompletedTd.rowSpan = quest.extraDetails.length || 1;
         parentTr.append(isCompletedTd);
 
-        [
-            {
-                description: "-Complete before the Isle of Mists.",
-                hyperlink: "",
-                isCompleted: false,
-            },
-        ];
-
         // Add the first extra detail (or placeholder if none)
         const firstExtraDetailTd = getProperExtraDetail(quest.extraDetails, true);
         parentTr.append(firstExtraDetailTd);
