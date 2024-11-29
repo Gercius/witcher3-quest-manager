@@ -15,11 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-body {
-    background-color: var(--bg);
-    color: var(--text);
-}
-
 // Utility classes
 
 .hidden {
@@ -121,117 +116,122 @@ header {
     }
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+main {
+    background: var(--bg);
+    color: var(--text);
 
-th {
-    font-weight: bold;
-    text-align: center;
-}
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
 
-td,
-th {
-    padding: 6px;
-    border: 1px solid;
-}
+    th {
+        font-weight: bold;
+        text-align: center;
+    }
 
-td {
-    text-align: left;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-}
-
-td.quest-completed {
-    text-align: center;
-}
-
-td a.extra-detail-link {
-    word-break: break-word;
-}
-
-tr .extra-detail {
-    min-height: 20px;
-}
-
-// Make table responsive https://css-tricks.com/responsive-data-tables/
-@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Force table to not be like tables anymore */
-    table,
-    thead,
-    tbody,
-    th,
     td,
-    tr {
-        display: block;
-    }
-
-    /* Hide table headers (but not display: none;, for accessibility) */
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    tr {
+    th {
+        padding: 6px;
         border: 1px solid;
-        border-bottom: none;
-        border-top: none;
-    }
-
-    tr.quest {
-        border-top: 1px solid;
-    }
-
-    tr.quest:not(:first-child) {
-        margin-top: 1rem;
-    }
-
-    tr .extra-detail {
-        min-height: 34px;
     }
 
     td {
-        /* Behave  like a "row" */
-        border: none;
-        border-bottom: 1px solid;
-        position: relative;
-        padding-left: 50%;
-    }
-
-    td:before {
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
 
     td.quest-completed {
-        text-align: unset;
+        text-align: center;
     }
 
-    /*
-	Label the data
-	*/
-    td:nth-of-type(1):before {
-        content: "Location";
+    td a.extra-detail-link {
+        word-break: break-word;
     }
 
-    td:nth-of-type(2):before {
-        content: "Quest";
+    tr .extra-detail {
+        min-height: 20px;
     }
 
-    td:nth-of-type(3):before {
-        content: "Quest Completed";
-    }
+    // Make table responsive https://css-tricks.com/responsive-data-tables/
+    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+        /* Force table to not be like tables anymore */
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            display: block;
+        }
 
-    tr .extra-detail::before {
-        content: "Extra Detail";
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            border: 1px solid;
+            border-bottom: none;
+            border-top: none;
+        }
+
+        tr.quest {
+            border-top: 1px solid;
+        }
+
+        tr.quest:not(:first-child) {
+            margin-top: 1rem;
+        }
+
+        tr .extra-detail {
+            min-height: 34px;
+        }
+
+        td {
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid;
+            position: relative;
+            padding-left: 50%;
+        }
+
+        td:before {
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+
+        td.quest-completed {
+            text-align: unset;
+        }
+
+        /*
+        Label the data
+        */
+        td:nth-of-type(1):before {
+            content: "Location";
+        }
+
+        td:nth-of-type(2):before {
+            content: "Quest";
+        }
+
+        td:nth-of-type(3):before {
+            content: "Quest Completed";
+        }
+
+        tr .extra-detail::before {
+            content: "Extra Detail";
+        }
     }
 }

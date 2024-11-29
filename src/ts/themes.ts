@@ -1,10 +1,10 @@
 export function handleThemes() {
-    const body = document.querySelector<HTMLBodyElement>("body");
+    const main = document.querySelector<HTMLElement>("main");
     const toggleThemeButton = document.querySelector<HTMLInputElement>(".theme-switch input");
     const themeStorageKey = "preferred-theme";
 
-    if (!body || !toggleThemeButton) {
-        console.error("Body or toggleThemeButton not found!");
+    if (!main || !toggleThemeButton) {
+        console.error("Main or toggleThemeButton not found!");
         return;
     }
 
@@ -13,26 +13,26 @@ export function handleThemes() {
     const preferDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     if (storedTheme) {
-        storedTheme === "dark" ? body.classList.add("dark-theme") : body.classList.remove("dark-theme");
+        storedTheme === "dark" ? main.classList.add("dark-theme") : main.classList.remove("dark-theme");
         toggleThemeButton.checked = storedTheme === "dark";
     } else {
-        preferDarkTheme ? body.classList.add("dark-theme") : "";
+        preferDarkTheme ? main.classList.add("dark-theme") : "";
         toggleThemeButton.checked = preferDarkTheme;
     }
 
     toggleThemeButton.addEventListener("click", toggleTheme);
 
     function toggleTheme() {
-        if (!body || !toggleThemeButton) {
+        if (!main || !toggleThemeButton) {
             console.error("Body or toggleThemeButton not found!");
             return;
         }
 
         if (toggleThemeButton.checked) {
-            body.classList.add("dark-theme");
+            main.classList.add("dark-theme");
             localStorage.setItem(themeStorageKey, "dark");
         } else {
-            body.classList.remove("dark-theme");
+            main.classList.remove("dark-theme");
             localStorage.setItem(themeStorageKey, "light");
         }
     }
