@@ -97,13 +97,13 @@ header .menu li p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-header .theme-switch {
+header .switch-btn {
   position: relative;
   display: inline-block;
   width: 44px;
   height: 24px;
 }
-header .theme-switch input {
+header .switch-btn input {
   opacity: 0;
   width: 0;
   height: 0;

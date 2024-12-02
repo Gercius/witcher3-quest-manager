@@ -1,5 +1,6 @@
 import { manageState } from "./manageState";
 import { renderCompletedPercentage } from "./render";
+import { hideCompletedQuest } from "./hideCompleted";
 
 export function handleToggleQuestCompletion() {
     const table = document.querySelector("table");
@@ -11,11 +12,7 @@ export function handleToggleQuestCompletion() {
     renderCompletedPercentage();
 
     table.addEventListener("click", (e) => {
-        let clickedEl;
-        if (e.target) {
-            clickedEl = e.target as HTMLElement;
-        }
-
+        const clickedEl = e.target as HTMLElement;
         if (!clickedEl) {
             console.error("Click event not working properly");
             return;
@@ -24,6 +21,7 @@ export function handleToggleQuestCompletion() {
         if (clickedEl.matches(".quest-completed input")) {
             manageState.save();
             renderCompletedPercentage();
+            hideCompletedQuest(clickedEl);
         }
     });
 }
