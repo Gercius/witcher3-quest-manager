@@ -4,7 +4,7 @@ export function handleMenu() {
     const menuButtonImages = document.querySelectorAll<HTMLImageElement>(".menu-button img");
 
     if (!menuButton || !menuWrapper) {
-        console.error("Menu button or menu not found!");
+        console.error("menuButton or menuWrapper found!");
         return;
     }
 
@@ -14,7 +14,6 @@ export function handleMenu() {
         menuButtonImages.forEach((img) => {
             img.classList.toggle("hidden");
         });
-
-        menuWrapper.classList.toggle("menu-show");
+        menuWrapper!.classList.toggle("menu-show");
     }
 }
