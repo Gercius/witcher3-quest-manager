@@ -17,102 +17,201 @@ body {
 
 // Utility classes
 
-.hidden {
+.hidden,
+.hidden-completed,
+.hidden-search {
     display: none;
+}
+
+.text-center {
+    text-align: center;
 }
 
 // HEADER
 
 header {
     background-color: salmon;
-    height: 50px;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
 
-    .menu-button {
-        background-color: transparent;
-        cursor: pointer;
+    @media (min-width: 1150px) {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
     }
 
-    .menu {
-        width: 250px;
+    .panel-wrapper {
+        height: 74px;
+        padding: 0 1rem;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (min-width: 1150px) {
+            padding: 0;
+            justify-content: space-around;
+            flex-grow: 2;
+        }
+
+        .completed-percentage-wrapper {
+            text-align: center;
+        }
+
+        .quest-search {
+            input {
+                width: 100%;
+                padding: 0.5rem 1rem;
+                border-radius: 50px;
+                outline: none;
+                font-size: 1rem;
+            }
+        }
+
+        .menu-button {
+            width: 32px;
+            background-color: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                transform: scale(1.1);
+            }
+
+            @media (min-width: 1150px) {
+                display: none;
+            }
+        }
+    }
+
+    .menu-wrapper {
+        flex-grow: 3;
+        justify-content: space-around;
+        width: 100%;
+        height: 0;
+        transition: height 0.2s ease;
+        overflow: hidden;
         background: salmon;
         color: white;
-        position: absolute;
-        top: 3rem;
-        right: -250px;
-        z-index: 9999;
-        transition: right 0.2s ease;
-        overflow: hidden;
+        z-index: 10;
+
+        @media (min-width: 1150px) {
+            height: auto;
+            width: fit-content;
+
+            display: flex;
+            align-items: center;
+
+            .menu {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                gap: 2rem;
+            }
+        }
+
+        .menu {
+            li {
+                height: 65px;
+                border-top: 2px solid;
+                padding: 0.5rem 1rem;
+                display: flex;
+                gap: 0.75rem;
+                align-items: center;
+
+                p {
+                    width: fit-content;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: inline;
+                }
+
+                @media (min-width: 1150px) {
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    padding: 0;
+                    border: none;
+                    height: unset;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                :last-of-type {
+                    label {
+                        display: block;
+                    }
+                }
+            }
+
+            li:last-of-type {
+                border-bottom: 1px solid;
+
+                @media (min-width: 1150px) {
+                    border: none;
+                }
+            }
+
+            // SWITCH BUTTON
+            .switch-btn-wrapper {
+                display: inline-block;
+
+                .switch-btn {
+                    position: relative;
+                    display: inline-block;
+                    width: 44px;
+                    height: 24px;
+
+                    input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: 0.4s;
+                        transition: 0.4s;
+                        border-radius: 34px;
+                    }
+
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 17px;
+                        width: 17px;
+                        left: 3px;
+                        bottom: 4px;
+                        background-color: white;
+                        -webkit-transition: 0.4s;
+                        transition: 0.4s;
+                        border-radius: 50%;
+                    }
+
+                    input:checked + .slider {
+                        background-color: #2196f3;
+                    }
+
+                    input:focus + .slider {
+                        box-shadow: 0 0 1px #2196f3;
+                    }
+
+                    input:checked + .slider:before {
+                        -webkit-transform: translateX(20px);
+                        -ms-transform: translateX(20px);
+                        transform: translateX(20px);
+                    }
+                }
+            }
+        }
     }
 
     .menu-show {
-        right: 0;
-    }
-
-    .menu li p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    // SWITCH BUTTON
-
-    .switch-btn {
-        position: relative;
-        display: inline-block;
-        width: 44px;
-        height: 24px;
-    }
-
-    .switch-btn input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-    .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
-        border-radius: 34px;
-    }
-
-    .slider:before {
-        position: absolute;
-        content: "";
-        height: 17px;
-        width: 17px;
-        left: 3px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
-        border-radius: 50%;
-    }
-
-    input:checked + .slider {
-        background-color: #2196f3;
-    }
-
-    input:focus + .slider {
-        box-shadow: 0 0 1px #2196f3;
-    }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(20px);
-        -ms-transform: translateX(20px);
-        transform: translateX(20px);
+        height: 260px;
     }
 }
 
@@ -123,115 +222,118 @@ main {
     table {
         width: 100%;
         border-collapse: collapse;
-    }
 
-    th {
-        font-weight: bold;
-        text-align: center;
-    }
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
 
-    td,
-    th {
-        padding: 6px;
-        border: 1px solid;
-    }
-
-    td {
-        text-align: left;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        white-space: normal;
-    }
-
-    td.quest-completed {
-        text-align: center;
-    }
-
-    td a.extra-detail-link {
-        word-break: break-word;
-    }
-
-    tr .extra-detail {
-        min-height: 20px;
-    }
-
-    // Make table responsive https://css-tricks.com/responsive-data-tables/
-    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-        /* Force table to not be like tables anymore */
-        table,
-        thead,
-        tbody,
-        th,
         td,
-        tr {
-            display: block;
-        }
-
-        /* Hide table headers (but not display: none;, for accessibility) */
-        thead tr {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
-        }
-
-        tr {
+        th {
+            padding: 6px;
             border: 1px solid;
-            border-bottom: none;
-            border-top: none;
-        }
-
-        tr.quest {
-            border-top: 1px solid;
-        }
-
-        tr.quest:not(:first-child) {
-            margin-top: 1rem;
-        }
-
-        tr .extra-detail {
-            min-height: 34px;
         }
 
         td {
-            /* Behave  like a "row" */
-            border: none;
-            border-bottom: 1px solid;
-            position: relative;
-            padding-left: 50%;
-        }
-
-        td:before {
-            /* Now like a table header */
-            position: absolute;
-            /* Top/left values mimic padding */
-            top: 6px;
-            left: 6px;
-            width: 45%;
-            padding-right: 10px;
-            white-space: nowrap;
+            text-align: left;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
         }
 
         td.quest-completed {
-            text-align: unset;
+            text-align: center;
         }
 
-        /*
+        td a.extra-detail-link {
+            word-break: break-word;
+        }
+
+        tr .extra-detail {
+            min-height: 20px;
+        }
+
+        // Make table responsive https://css-tricks.com/responsive-data-tables/
+        @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+            /* Force table to not be like tables anymore */
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid;
+                border-bottom: none;
+                border-top: none;
+            }
+
+            tr.quest {
+                border-top: 1px solid;
+            }
+
+            tr.quest:not(:first-child) {
+                margin-top: 1rem;
+            }
+            // tr.quest {
+            //     margin-bottom: 4rem;
+            // }
+
+            tr .extra-detail {
+                min-height: 34px;
+            }
+
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+
+            td.quest-completed {
+                text-align: unset;
+            }
+
+            /*
         Label the data
         */
-        td:nth-of-type(1):before {
-            content: "Location";
-        }
+            td:nth-of-type(1):before {
+                content: "Location";
+            }
 
-        td:nth-of-type(2):before {
-            content: "Quest";
-        }
+            td:nth-of-type(2):before {
+                content: "Quest";
+            }
 
-        td:nth-of-type(3):before {
-            content: "Quest Completed";
-        }
+            td:nth-of-type(3):before {
+                content: "Quest Completed";
+            }
 
-        tr .extra-detail::before {
-            content: "Extra Detail";
+            tr .extra-detail::before {
+                content: "Extra Detail";
+            }
         }
     }
 }

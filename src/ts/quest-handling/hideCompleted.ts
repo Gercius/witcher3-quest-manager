@@ -30,7 +30,7 @@ export function handleHideCompleted() {
             const questId = questEl.dataset.id;
             const questTableRows: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-id="${questId}"]`);
             questTableRows.forEach((rowEl) => {
-                if (isQuestCompleted) rowEl.classList.toggle("hidden", hide);
+                if (isQuestCompleted) rowEl.classList.toggle("hidden-completed", hide);
             });
         });
     }
@@ -57,7 +57,7 @@ export function hideCompletedQuest(questCompletedCheckbox: HTMLElement) {
     const questTableRows: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-id="${questId}"]`);
     questTableRows.forEach((rowEl) => {
         if (isQuestCompleted) {
-            rowEl.classList.toggle("hidden");
+            rowEl.classList.toggle("hidden-completed");
         }
     });
 }

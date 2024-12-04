@@ -9,32 +9,46 @@
     <body>
         <div class="container">
             <header>
-                <p>Completed <span class="completed-percentage"></span> %</p>
+                <div class="panel-wrapper">
+                    <div class="completed-percentage-wrapper">
+                        <p>Completed</p>
+                        <p><span class="completed-percentage"></span> %</p>
+                        <p>1/2 quests</p>
+                    </div>
+                    <form class="quest-search">
+                        <input type="text" name="search" id="search" placeholder="Quest Search" />
+                    </form>
                     <button type="button" name="menu" class="menu-button">
                         <img src="assets/menu.svg" alt="" />
                         <img class="hidden" src="assets/close.svg" alt="" />
                     </button>
+                </div>
+                <div class="menu-wrapper">
                     <ul class="menu">
                         <li>
+                            <div class="switch-btn-wrapper">
+                                <label class="theme-switch switch-btn">
+                                    <input type="checkbox" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
                             <p>Change Theme</p>
-                            <label class="theme-switch switch-btn">
-                                <input type="checkbox" />
-                                <span class="slider round"></span>
-                            </label>
                         </li>
                         <li>
+                            <div class="switch-btn-wrapper">
+                                <label class="hide-quests switch-btn">
+                                    <input type="checkbox" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
                             <p>Hide Completed Quests</p>
-                            <label class="hide-quests switch-btn">
-                                <input type="checkbox" />
-                                <span class="slider round"></span>
-                            </label>
                         </li>
                         <li>
                             <button class="export-quest-data">Export Quest Data</button>
                         </li>
                         <li>
                             <div>
-                                <label for="">Import Quest Data</label>
+                                <label>Import Quest Data</label>
                                 <input type="file" class="import-quest-data" />
                             </div>
                         </li>

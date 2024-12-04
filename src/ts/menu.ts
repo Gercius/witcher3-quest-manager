@@ -1,19 +1,20 @@
 export function handleMenu() {
+    const menuWrapper = document.querySelector<HTMLElement>(".menu-wrapper");
     const menuButton = document.querySelector<HTMLButtonElement>(".menu-button");
     const menuButtonImages = document.querySelectorAll<HTMLImageElement>(".menu-button img");
-    const menu = document.querySelector<HTMLElement>(".menu");
 
-    if (!menuButton || !menu) {
+    if (!menuButton || !menuWrapper) {
         console.error("Menu button or menu not found!");
         return;
     }
 
-    menuButton.addEventListener("click", () => {
+    menuButton.addEventListener("click", toggleMenu);
+
+    function toggleMenu() {
         menuButtonImages.forEach((img) => {
             img.classList.toggle("hidden");
         });
 
-        const right = menu.style.right;
-        right === "-250px" || !right ? (menu.style.right = "0px") : (menu.style.right = "-250px");
-    });
+        menuWrapper.classList.toggle("menu-show");
+    }
 }
