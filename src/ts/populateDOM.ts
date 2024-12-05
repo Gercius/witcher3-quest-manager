@@ -33,7 +33,7 @@ export async function populateQuestTable() {
         // Add marker for quests whose order doesn't matter
         if (!quest.questInfo.orderMatters) {
             const questOrderNoMatterImg = document.createElement("img");
-            questOrderNoMatterImg.src = "public/assets/kekw.jpg";
+            questOrderNoMatterImg.src = "imgs/kekw.jpg";
             nameTd.appendChild(questOrderNoMatterImg);
         }
 
