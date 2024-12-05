@@ -1,4 +1,4 @@
-import { getData } from "./utils.js";
+import { questsData } from "./utils.js";
 
 export async function populateQuestTable() {
     const tbody = document.querySelector("main table tbody");
@@ -7,22 +7,31 @@ export async function populateQuestTable() {
         return;
     }
 
-    const quests = await getData();
+    for (let i = 0; i < questsData.length; i++) {
+        const quest = questsData[i];
 
-    for (let i = 0; i < quests.length; i++) {
-        const quest = quests[i];
-
+        // Main quest row
         const parentTr = document.createElement("tr");
         parentTr.setAttribute("data-id", i.toString());
         parentTr.classList.add("quest");
 
+        // Location
         const locationTd = document.createElement("td");
         locationTd.textContent = quest.location;
         locationTd.rowSpan = quest.extraDetails.length || 1;
         parentTr.append(locationTd);
 
+        // Quest
         const nameTd = document.createElement("td");
         nameTd.classList.add("quest-name");
+
+        // Add marker for quests whose order doesn't matter
+        if (!quest.questInfo.orderMatters) {
+            const questOrderNoMatterImg = document.createElement("img");
+            questOrderNoMatterImg.src = "assets/kekw.jpg";
+            nameTd.appendChild(questOrderNoMatterImg);
+        }
+
         const questLink = document.createElement("a");
         questLink.classList.add("quest-link");
         questLink.textContent = quest.questInfo.name;
@@ -31,6 +40,7 @@ export async function populateQuestTable() {
         nameTd.rowSpan = quest.extraDetails.length || 1;
         parentTr.append(nameTd);
 
+        // Quest Completed
         const isCompletedTd = document.createElement("td");
         isCompletedTd.classList.add("quest-completed");
         const isCompletedCheckbox = document.createElement("input");

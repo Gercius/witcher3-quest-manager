@@ -223,6 +223,12 @@ main {
         width: 100%;
         border-collapse: collapse;
 
+        img {
+            margin-right: 0.25rem;
+            width: 20px;
+            display: inline-block;
+        }
+
         th {
             font-weight: bold;
             text-align: center;

@@ -12,3 +12,4 @@ export async function getData() {
         console.error((error as Error).message);
     }
 }
+export const questsData = await getData();
