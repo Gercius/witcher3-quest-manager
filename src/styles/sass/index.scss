@@ -288,12 +288,9 @@ main {
                 border-top: 1px solid;
             }
 
-            tr.quest:not(:first-child) {
-                margin-top: 1rem;
+            tr.last-quest-row {
+                margin-bottom: 1rem;
             }
-            // tr.quest {
-            //     margin-bottom: 4rem;
-            // }
 
             tr .extra-detail {
                 min-height: 34px;

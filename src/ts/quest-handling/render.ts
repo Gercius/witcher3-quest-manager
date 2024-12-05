@@ -14,5 +14,5 @@ export function renderCompletedPercentage() {
     const percentage = ((totalCompleted / totalQuests) * 100).toFixed(1);
 
     completedHeaderEl.textContent = percentage;
-    questCountEl.innerHTML = `${totalCompleted}/${totalQuests} quests`;
+    questCountEl.innerHTML = `${totalCompleted}/${totalQuests}`;
 }
