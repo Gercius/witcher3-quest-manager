@@ -7,8 +7,10 @@ export async function populateQuestTable() {
         return;
     }
 
-    for (let i = 0; i < questsData.length; i++) {
-        const quest = questsData[i];
+    const data = await questsData;
+
+    for (let i = 0; i < data.length; i++) {
+        const quest = data[i];
 
         // Main quest row
         const parentTr = document.createElement("tr");

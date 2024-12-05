@@ -1,4 +1,4 @@
-export async function getData() {
+async function getData() {
     const url = "data/quests.json";
     try {
         const response = await fetch(url);
@@ -12,4 +12,5 @@ export async function getData() {
         console.error((error as Error).message);
     }
 }
-export const questsData = await getData();
+
+export const questsData = getData();
