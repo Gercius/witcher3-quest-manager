@@ -169,9 +169,9 @@ header .menu-wrapper .menu li p {
     align-items: center;
     gap: 0.5rem;
   }
-}
-header .menu-wrapper .menu li :last-of-type label {
-  display: block;
+  header .menu-wrapper .menu li:first-of-type {
+    order: 4;
+  }
 }
 header .menu-wrapper .menu li:last-of-type {
   border-bottom: 1px solid;
@@ -180,6 +180,9 @@ header .menu-wrapper .menu li:last-of-type {
   header .menu-wrapper .menu li:last-of-type {
     border: none;
   }
+}
+header .menu-wrapper .menu li:last-of-type label {
+  display: block;
 }
 header .menu-wrapper .menu .switch-btn-wrapper {
   display: inline-block;
@@ -242,16 +245,15 @@ main table {
   width: 100%;
   border-collapse: collapse;
 }
-main table th {
+main table thead tr th {
+  padding: 6px;
+  border: 1px solid;
   font-weight: bold;
   text-align: center;
 }
-main table td,
-main table th {
+main table td {
   padding: 6px;
   border: 1px solid;
-}
-main table td {
   text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -260,11 +262,16 @@ main table td {
 main table td.quest-completed {
   text-align: center;
 }
+main table td.extra-detail {
+  min-height: 20px;
+}
 main table td a.extra-detail-link {
   word-break: break-word;
 }
-main table tr .extra-detail {
-  min-height: 20px;
+main table td img {
+  margin-right: 0.25rem;
+  width: 20px;
+  display: inline-block;
 }
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   main table {
@@ -295,8 +302,8 @@ main table tr .extra-detail {
   main table tr.quest {
     border-top: 1px solid;
   }
-  main table tr.quest:not(:first-child) {
-    margin-top: 1rem;
+  main table tr.last-quest-row {
+    margin-bottom: 1rem;
   }
   main table tr .extra-detail {
     min-height: 34px;

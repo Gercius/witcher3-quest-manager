@@ -133,20 +133,22 @@ header {
                     height: unset;
                     align-items: center;
                     gap: 0.5rem;
+
+                    &:first-of-type {
+                        order: 4;
+                    }
                 }
 
-                :last-of-type {
+                &:last-of-type {
+                    border-bottom: 1px solid;
+
+                    @media (min-width: 1150px) {
+                        border: none;
+                    }
+
                     label {
                         display: block;
                     }
-                }
-            }
-
-            li:last-of-type {
-                border-bottom: 1px solid;
-
-                @media (min-width: 1150px) {
-                    border: none;
                 }
             }
 
@@ -223,40 +225,38 @@ main {
         width: 100%;
         border-collapse: collapse;
 
-        img {
-            margin-right: 0.25rem;
-            width: 20px;
-            display: inline-block;
-        }
-
-        th {
+        thead tr th {
+            padding: 6px;
+            border: 1px solid;
             font-weight: bold;
             text-align: center;
         }
 
-        td,
-        th {
+        td {
             padding: 6px;
             border: 1px solid;
-        }
-
-        td {
             text-align: left;
             word-wrap: break-word;
             overflow-wrap: break-word;
             white-space: normal;
-        }
 
-        td.quest-completed {
-            text-align: center;
-        }
+            &.quest-completed {
+                text-align: center;
+            }
 
-        td a.extra-detail-link {
-            word-break: break-word;
-        }
+            &.extra-detail {
+                min-height: 20px;
+            }
 
-        tr .extra-detail {
-            min-height: 20px;
+            a.extra-detail-link {
+                word-break: break-word;
+            }
+
+            img {
+                margin-right: 0.25rem;
+                width: 20px;
+                display: inline-block;
+            }
         }
 
         // Make table responsive https://css-tricks.com/responsive-data-tables/
