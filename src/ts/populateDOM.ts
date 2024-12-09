@@ -15,6 +15,8 @@ export async function populateQuestTable() {
         // Main quest row
         const parentTr = document.createElement("tr");
         parentTr.setAttribute("data-id", i.toString());
+        const questType = quest.questInfo.type.split(" ")[0].toLowerCase();
+        parentTr.setAttribute("data-type", questType);
         parentTr.classList.add("quest");
         if (quest.extraDetails.length < 2 || !quest.extraDetails) {
             parentTr.classList.add("last-quest-row");

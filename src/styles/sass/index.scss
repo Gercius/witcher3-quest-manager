@@ -19,7 +19,9 @@ body {
 
 .hidden,
 .hidden-completed,
-.hidden-search {
+.hidden-search,
+.hidden-filtered,
+.hidden-filtered-completed {
     display: none;
 }
 
@@ -162,16 +164,17 @@ header {
                         }
 
                         @media (min-width: 1150px) {
-                            // display: flex;
-                            // justify-content: space-evenly;
-                            // flex-wrap: wrap;
                             padding: 1rem;
                             grid-template-columns: repeat(4, 1fr);
                             min-width: max-content;
                             position: absolute;
                             top: 70px;
                             right: 0;
-                            // z-index: 9999;
+                        }
+
+                        // .hidden from utility classes specificity is too low
+                        &.hidden {
+                            display: none;
                         }
                     }
                 }

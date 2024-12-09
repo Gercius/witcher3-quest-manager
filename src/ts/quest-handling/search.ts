@@ -1,4 +1,4 @@
-import { manageState } from "./manageState";
+import { getQuestGroups } from "../utils";
 
 export function handleSearch() {
     const searchInput = document.querySelector(".quest-search input");
@@ -9,7 +9,7 @@ export function handleSearch() {
     let currentQuests: NodeListOf<Element>[] = [];
 
     searchInput.addEventListener("focus", () => {
-        currentQuests = getCurrentQuests();
+        currentQuests = getQuestGroups();
     });
 
     searchInput.addEventListener("input", (e) => {
@@ -24,14 +24,4 @@ export function handleSearch() {
             });
         }
     });
-
-    function getCurrentQuests() {
-        const questInfo = manageState.get();
-        const questIds = questInfo.map((quest) => quest.id);
-        const questGroupsEl = [];
-        for (const questId of questIds) {
-            questGroupsEl.push(document.querySelectorAll(`[data-id="${questId}"]`));
-        }
-        return questGroupsEl;
-    }
 }

@@ -62,7 +62,9 @@ body {
 
 .hidden,
 .hidden-completed,
-.hidden-search {
+.hidden-search,
+.hidden-filtered,
+.hidden-filtered-completed {
   display: none;
 }
 
@@ -209,6 +211,9 @@ header .menu-wrapper .menu > li.filters .filter-options {
     top: 70px;
     right: 0;
   }
+}
+header .menu-wrapper .menu > li.filters .filter-options.hidden {
+  display: none;
 }
 header .menu-wrapper .menu > li label {
   display: block;
