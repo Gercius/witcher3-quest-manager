@@ -211,9 +211,9 @@ header .menu-wrapper .menu > li.filters .filter-options {
     top: 70px;
     right: 0;
   }
-}
-header .menu-wrapper .menu > li.filters .filter-options.hidden {
-  display: none;
+  header .menu-wrapper .menu > li.filters .filter-options.hidden {
+    display: none;
+  }
 }
 header .menu-wrapper .menu > li label {
   display: block;

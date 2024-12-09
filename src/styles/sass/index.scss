@@ -164,6 +164,10 @@ header {
                         }
 
                         @media (min-width: 1150px) {
+                            &.hidden {
+                                display: none;
+                            }
+
                             padding: 1rem;
                             grid-template-columns: repeat(4, 1fr);
                             min-width: max-content;
@@ -173,9 +177,6 @@ header {
                         }
 
                         // .hidden from utility classes specificity is too low
-                        &.hidden {
-                            display: none;
-                        }
                     }
                 }
 
