@@ -4,7 +4,7 @@ export function handleMenu() {
     const menuButtonImages = document.querySelectorAll<HTMLImageElement>(".menu-button img");
 
     if (!menuButton || !menuWrapper) {
-        console.error("menuButton or menuWrapper found!");
+        console.error("menuButton or menuWrapper not found!");
         return;
     }
 
