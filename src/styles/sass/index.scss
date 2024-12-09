@@ -88,16 +88,15 @@ header {
         justify-content: space-around;
         width: 100%;
         height: 0;
-        transition: height 0.2s ease;
         overflow: hidden;
         background: salmon;
         color: white;
         z-index: 10;
 
         @media (min-width: 1150px) {
+            overflow: unset;
             height: auto;
             width: fit-content;
-
             display: flex;
             align-items: center;
 
@@ -110,7 +109,7 @@ header {
         }
 
         .menu {
-            li {
+            > li {
                 height: 65px;
                 border-top: 2px solid;
                 padding: 0.5rem 1rem;
@@ -118,11 +117,67 @@ header {
                 gap: 0.75rem;
                 align-items: center;
 
-                p {
-                    width: fit-content;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    display: inline;
+                &.filters {
+                    background-color: salmon;
+                    min-height: 70px;
+                    max-height: 220px;
+                    height: auto;
+                    border-bottom: 1px solid;
+                    position: relative;
+
+                    @media (min-width: 1150px) {
+                        border: none;
+
+                        p {
+                            display: none;
+                        }
+                    }
+
+                    button {
+                        display: none;
+
+                        @media (min-width: 1150px) {
+                            display: block;
+                        }
+                    }
+
+                    .filter-options {
+                        background-color: inherit;
+                        width: 100%;
+                        text-align: center;
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                        gap: 1rem;
+
+                        @media (max-width: 570px) {
+                            grid-template-columns: repeat(2, minmax(100px, 1fr));
+                        }
+
+                        @media (min-width: 571px) and (max-width: 1000px) {
+                            grid-template-columns: repeat(4, minmax(100px, 1fr));
+                        }
+
+                        @media (min-width: 1001px) {
+                            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                        }
+
+                        @media (min-width: 1150px) {
+                            // display: flex;
+                            // justify-content: space-evenly;
+                            // flex-wrap: wrap;
+                            padding: 1rem;
+                            grid-template-columns: repeat(4, 1fr);
+                            min-width: max-content;
+                            position: absolute;
+                            top: 70px;
+                            right: 0;
+                            // z-index: 9999;
+                        }
+                    }
+                }
+
+                label {
+                    display: block;
                 }
 
                 @media (min-width: 1150px) {
@@ -134,20 +189,24 @@ header {
                     align-items: center;
                     gap: 0.5rem;
 
-                    &:first-of-type {
+                    &.theme-switch {
+                        order: 5;
+                    }
+
+                    &.hide-completed {
+                        order: 1;
+                    }
+
+                    &.filters {
+                        order: 2;
+                    }
+
+                    &.import-data {
                         order: 4;
                     }
-                }
 
-                &:last-of-type {
-                    border-bottom: 1px solid;
-
-                    @media (min-width: 1150px) {
-                        border: none;
-                    }
-
-                    label {
-                        display: block;
+                    &.export-data {
+                        order: 3;
                     }
                 }
             }
@@ -213,7 +272,7 @@ header {
     }
 
     .menu-show {
-        height: 260px;
+        height: auto;
     }
 }
 

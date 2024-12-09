@@ -1,5 +1,5 @@
 export function handleHideCompleted() {
-    const hideQuestsBtn = document.querySelector<HTMLInputElement>(".hide-quests input");
+    const hideQuestsBtn = document.querySelector<HTMLInputElement>(".hide-completed .switch-btn input");
     if (!hideQuestsBtn) {
         console.error("hideQuestsBtn not found!");
         return;
@@ -37,7 +37,7 @@ export function handleHideCompleted() {
 }
 
 export function hideCompletedQuest(questCompletedCheckbox: HTMLElement) {
-    const hideQuestsBtn = document.querySelector<HTMLInputElement>(".hide-quests input");
+    const hideQuestsBtn = document.querySelector<HTMLInputElement>(".hide-completed .switch-btn input");
     if (!hideQuestsBtn) {
         console.error("hideQuestsBtn not found!");
         return;

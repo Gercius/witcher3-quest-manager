@@ -11,7 +11,7 @@ interface QuestInfo {
     EXPORT 
 */
 (() => {
-    const exportButton = document.querySelector(".export-quest-data");
+    const exportButton = document.querySelector(".export-data-btn");
     if (!exportButton) {
         console.error("Export button not found!");
         return;

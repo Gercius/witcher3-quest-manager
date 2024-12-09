@@ -1,6 +1,6 @@
 export function handleThemes() {
     const main = document.querySelector<HTMLElement>("main");
-    const toggleThemeButton = document.querySelector<HTMLInputElement>(".theme-switch input");
+    const toggleThemeButton = document.querySelector<HTMLInputElement>(".theme-switch .switch-btn input");
     const themeStorageKey = "preferred-theme";
 
     if (!main || !toggleThemeButton) {
