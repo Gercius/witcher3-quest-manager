@@ -29,8 +29,6 @@ body {
     text-align: center;
 }
 
-// HEADER
-
 header {
     background-color: salmon;
 
@@ -164,6 +162,7 @@ header {
                         }
 
                         @media (min-width: 1150px) {
+                            // .hidden from utility classes specificity is too low
                             &.hidden {
                                 display: none;
                             }
@@ -175,8 +174,6 @@ header {
                             top: 70px;
                             right: 0;
                         }
-
-                        // .hidden from utility classes specificity is too low
                     }
                 }
 
@@ -287,6 +284,7 @@ main {
     table {
         width: 100%;
         border-collapse: collapse;
+        font-size: 16px;
 
         thead tr th {
             padding: 6px;
@@ -339,12 +337,7 @@ main {
                 position: absolute;
                 top: -9999px;
                 left: -9999px;
-            }
-
-            tr {
-                border: 1px solid;
-                border-bottom: none;
-                border-top: none;
+                // display: none;
             }
 
             tr.quest {
@@ -364,7 +357,7 @@ main {
                 border: none;
                 border-bottom: 1px solid;
                 position: relative;
-                padding-left: 50%;
+                padding-left: 6.5rem;
             }
 
             td:before {
@@ -373,7 +366,7 @@ main {
                 /* Top/left values mimic padding */
                 top: 6px;
                 left: 6px;
-                width: 45%;
+                width: fit-content;
                 padding-right: 10px;
                 white-space: nowrap;
             }
@@ -385,6 +378,7 @@ main {
             /*
         Label the data
         */
+
             td:nth-of-type(1):before {
                 content: "Location";
             }
@@ -394,7 +388,7 @@ main {
             }
 
             td:nth-of-type(3):before {
-                content: "Quest Completed";
+                content: "Completed";
             }
 
             tr .extra-detail::before {

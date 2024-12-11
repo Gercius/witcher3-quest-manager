@@ -6,21 +6,12 @@
 
 html {
   height: 100%;
+  font-size: 16px;
 }
 
 body {
   min-height: 100%;
   font-family: system-ui, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
 }
 
 ol,
@@ -304,6 +295,7 @@ main {
 main table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 16px;
 }
 main table thead tr th {
   padding: 6px;
@@ -354,11 +346,6 @@ main table td img {
     top: -9999px;
     left: -9999px;
   }
-  main table tr {
-    border: 1px solid;
-    border-bottom: none;
-    border-top: none;
-  }
   main table tr.quest {
     border-top: 1px solid;
   }
@@ -373,7 +360,7 @@ main table td img {
     border: none;
     border-bottom: 1px solid;
     position: relative;
-    padding-left: 50%;
+    padding-left: 6.5rem;
   }
   main table td:before {
     /* Now like a table header */
@@ -381,7 +368,7 @@ main table td img {
     /* Top/left values mimic padding */
     top: 6px;
     left: 6px;
-    width: 45%;
+    width: fit-content;
     padding-right: 10px;
     white-space: nowrap;
   }
@@ -395,7 +382,7 @@ main table td img {
     content: "Quest";
   }
   main table td:nth-of-type(3):before {
-    content: "Quest Completed";
+    content: "Completed";
   }
   main table tr .extra-detail::before {
     content: "Extra Detail";
