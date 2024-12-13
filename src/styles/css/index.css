@@ -36,6 +36,11 @@ a {
   border-style: solid;
 }
 
+button {
+  font-family: inherit;
+  border: none;
+}
+
 :root {
   --bg: #fff;
   --text: #000;
@@ -138,6 +143,9 @@ header .menu-wrapper {
     gap: 2rem;
   }
 }
+header .menu-wrapper .menu {
+  color: var(--text);
+}
 header .menu-wrapper .menu > li {
   height: 65px;
   border-top: 2px solid;
@@ -145,6 +153,20 @@ header .menu-wrapper .menu > li {
   display: flex;
   gap: 0.75rem;
   align-items: center;
+}
+header .menu-wrapper .menu > li.import-data input {
+  display: none;
+}
+header .menu-wrapper .menu > li.export-data button, header .menu-wrapper .menu > li.import-data label, header .menu-wrapper .menu > li.filters button {
+  background-color: rgb(240, 240, 240);
+  font-size: 1rem;
+  width: 7rem;
+  text-align: center;
+  line-height: 2;
+  border-radius: 5px;
+}
+header .menu-wrapper .menu > li.export-data button:hover, header .menu-wrapper .menu > li.import-data label:hover, header .menu-wrapper .menu > li.filters button:hover {
+  background-color: rgb(210, 210, 210);
 }
 header .menu-wrapper .menu > li.filters {
   background-color: salmon;

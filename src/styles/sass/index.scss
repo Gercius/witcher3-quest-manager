@@ -109,6 +109,8 @@ header {
         }
 
         .menu {
+            color: var(--text);
+
             > li {
                 height: 65px;
                 border-top: 2px solid;
@@ -116,6 +118,25 @@ header {
                 display: flex;
                 gap: 0.75rem;
                 align-items: center;
+
+                &.import-data input {
+                    display: none;
+                }
+
+                &.export-data button,
+                &.import-data label,
+                &.filters button {
+                    background-color: rgb(240, 240, 240);
+                    font-size: 1rem;
+                    width: 7rem;
+                    text-align: center;
+                    line-height: 2;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: rgb(210, 210, 210);
+                    }
+                }
 
                 &.filters {
                     background-color: salmon;
