@@ -43,6 +43,7 @@ export async function populateQuestTable() {
         questLink.classList.add("quest-link");
         questLink.textContent = quest.questInfo.name;
         questLink.setAttribute("href", quest.questInfo.hyperlink);
+        questLink.setAttribute("target", "_blank");
         nameTd.append(questLink);
         nameTd.rowSpan = quest.extraDetails.length || 1;
         parentTr.append(nameTd);
@@ -56,9 +57,11 @@ export async function populateQuestTable() {
         isCompletedTd.rowSpan = quest.extraDetails.length || 1;
         parentTr.append(isCompletedTd);
 
-        // Add the first extra detail (or placeholder if none)
-        const firstExtraDetailTd = getProperExtraDetail(quest.extraDetails, true);
-        parentTr.append(firstExtraDetailTd);
+        // Add the first extra detail
+        if (quest.extraDetails.length) {
+            const firstExtraDetailTd = getProperExtraDetail(quest.extraDetails, true);
+            parentTr.append(firstExtraDetailTd);
+        }
         tbody.append(parentTr);
 
         // Add additional rows for remaining extra details, if any
@@ -93,6 +96,7 @@ export async function populateQuestTable() {
             extraDetailLink.classList.add("extra-detail-link");
             extraDetailLink.textContent = extraDetails[firstDetail ? 0 : index].description;
             extraDetailLink.setAttribute("href", extraDetails[firstDetail ? 0 : index].hyperlink);
+            extraDetailLink.setAttribute("target", "_blank");
             extraDetailTd.append(extraDetailLink);
         } else if (
             extraDetails[firstDetail ? 0 : index]?.hyperlink &&
@@ -102,6 +106,7 @@ export async function populateQuestTable() {
             extraDetailLink.classList.add("extra-detail-link");
             extraDetailLink.textContent = extraDetails[firstDetail ? 0 : index].hyperlink;
             extraDetailLink.setAttribute("href", extraDetails[firstDetail ? 0 : index].hyperlink);
+            extraDetailLink.setAttribute("target", "_blank");
             extraDetailTd.append(extraDetailLink);
         } else {
             extraDetailTd.textContent = extraDetails[firstDetail ? 0 : index]?.description;
