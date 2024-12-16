@@ -25,6 +25,7 @@ export async function populateQuestTable() {
         // Location
         const locationTd = document.createElement("td");
         locationTd.textContent = quest.location;
+        locationTd.classList.add("location");
         locationTd.rowSpan = quest.extraDetails.length || 1;
         parentTr.append(locationTd);
 

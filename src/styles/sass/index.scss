@@ -317,13 +317,18 @@ main {
         td {
             padding: 6px;
             border: 1px solid;
-            text-align: left;
             word-wrap: break-word;
             overflow-wrap: break-word;
             white-space: normal;
 
+            &.location,
+            &.quest-name,
             &.quest-completed {
                 text-align: center;
+
+                @media (max-width: 760px) {
+                    text-align: left;
+                }
             }
 
             &.extra-detail {
@@ -370,7 +375,10 @@ main {
             }
 
             tr .extra-detail {
+                display: flex;
+                flex-direction: column;
                 min-height: 34px;
+                padding: 0.5rem;
             }
 
             td {
@@ -413,6 +421,8 @@ main {
             }
 
             tr .extra-detail::before {
+                position: static;
+                margin-bottom: 0.25rem;
                 content: "Extra Detail";
             }
         }

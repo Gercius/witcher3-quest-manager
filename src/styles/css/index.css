@@ -328,13 +328,17 @@ main table thead tr th {
 main table td {
   padding: 6px;
   border: 1px solid;
-  text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
 }
-main table td.quest-completed {
+main table td.location, main table td.quest-name, main table td.quest-completed {
   text-align: center;
+}
+@media (max-width: 760px) {
+  main table td.location, main table td.quest-name, main table td.quest-completed {
+    text-align: left;
+  }
 }
 main table td.extra-detail {
   min-height: 20px;
@@ -375,7 +379,10 @@ main table td img {
     margin-bottom: 1rem;
   }
   main table tr .extra-detail {
+    display: flex;
+    flex-direction: column;
     min-height: 34px;
+    padding: 0.5rem;
   }
   main table td {
     /* Behave  like a "row" */
@@ -407,6 +414,8 @@ main table td img {
     content: "Completed";
   }
   main table tr .extra-detail::before {
+    position: static;
+    margin-bottom: 0.25rem;
     content: "Extra Detail";
   }
 }
