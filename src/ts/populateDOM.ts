@@ -47,17 +47,18 @@ export async function populateQuestTable() {
         const nameTd = document.createElement("td");
         nameTd.classList.add("quest-name");
 
+        // Add quest type markers
+        for (const questType in questTypesMap) {
+            if (quest.questInfo.type === questTypesMap[questType]) {
+                nameTd.innerText += `${questType}\n`;
+            }
+        }
+
         // Add marker for quests whose order doesn't matter
         if (!quest.questInfo.orderMatters) {
             const questOrderNoMatterImg = document.createElement("img");
             questOrderNoMatterImg.src = "imgs/kekw.jpg";
             nameTd.appendChild(questOrderNoMatterImg);
-        }
-
-        for (const questType in questTypesMap) {
-            if (quest.questInfo.type === questTypesMap[questType]) {
-                nameTd.innerText += `${questType}\n`;
-            }
         }
 
         const questLink = document.createElement("a");
