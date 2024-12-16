@@ -1,5 +1,19 @@
 import { questsData } from "./utils.js";
 
+interface QuestTypesMap {
+    [key: string]: string;
+}
+
+const questTypesMap: QuestTypesMap = {
+    MQ: "Main Quest",
+    SQ: "Side Quest",
+    C: "Contract",
+    TH: "Treasure Hunt",
+    "G&HP": "Gwent & The Heroes' Pursuit",
+    SH: "Scavenger Hunt",
+    CE: "Chance Encounter",
+};
+
 export async function populateQuestTable() {
     const tbody = document.querySelector("main table tbody");
     if (!tbody) {
@@ -38,6 +52,12 @@ export async function populateQuestTable() {
             const questOrderNoMatterImg = document.createElement("img");
             questOrderNoMatterImg.src = "imgs/kekw.jpg";
             nameTd.appendChild(questOrderNoMatterImg);
+        }
+
+        for (const questType in questTypesMap) {
+            if (quest.questInfo.type === questTypesMap[questType]) {
+                nameTd.innerText += `${questType}\n`;
+            }
         }
 
         const questLink = document.createElement("a");
