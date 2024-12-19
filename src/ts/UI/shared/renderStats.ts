@@ -1,4 +1,4 @@
-import { manageState } from "./manageState";
+import { manageState } from "../../logic/shared/manageState";
 
 export function renderCompletedPercentage() {
     const questCountEl = document.querySelector(".quest-count");

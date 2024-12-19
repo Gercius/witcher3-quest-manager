@@ -1,4 +1,4 @@
-import { questsData } from "./utils.js";
+import { Quests } from "../../shared/data";
 
 interface QuestTypesMap {
     [key: string]: string;
@@ -14,14 +14,12 @@ const questTypesMap: QuestTypesMap = {
     CE: "Chance Encounter",
 };
 
-export async function populateQuestTable() {
+export function renderQuestTable(data: Quests) {
     const tbody = document.querySelector("main table tbody");
     if (!tbody) {
         console.error("Tbody not found!");
         return;
     }
-
-    const data = await questsData;
 
     for (let i = 0; i < data.length; i++) {
         const quest = data[i];

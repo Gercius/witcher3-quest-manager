@@ -1,14 +1,15 @@
-import { handleMenu } from "./menu.ts";
-import { populateQuestTable } from "./populateDOM.ts";
-import { handleThemes } from "./themes.ts";
-import { handleToggleQuestCompletion } from "./quest-handling/complete.ts";
-import { handleHideCompleted } from "./quest-handling/hideCompleted.ts";
-import { handleSearch } from "./quest-handling/search.ts";
-import { handleFiltering } from "./quest-handling/filter.ts";
+import { originalQuestsData } from "./shared/data.ts";
+import { handleMenu } from "./UI/menu.ts";
+import { renderQuestTable } from "./UI/shared/renderTable.ts";
+import { handleThemes } from "./UI/themes.ts";
+import { handleToggleQuestCompletion } from "./logic/complete.ts";
+import { handleHideCompleted } from "./logic/hideCompleted.ts";
+import { handleSearch } from "./logic/search.ts";
+import { handleFiltering } from "./logic/filter.ts";
 
-(async function main() {
+(function main() {
     handleMenu();
-    await populateQuestTable();
+    renderQuestTable(originalQuestsData);
     handleThemes();
     handleToggleQuestCompletion();
     handleHideCompleted();

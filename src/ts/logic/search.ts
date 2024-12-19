@@ -1,4 +1,4 @@
-import { getQuestGroups } from "../utils";
+import { getQuestGroups } from "../shared/utils";
 
 export function handleSearch() {
     const searchInput = document.querySelector(".quest-search input");

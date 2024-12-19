@@ -1,6 +1,6 @@
-import { manageState } from "./quest-handling/manageState";
+import { manageState } from "../logic/shared/manageState";
 
-async function getData() {
+export async function getData() {
     const url = "data/quests.json";
     try {
         const response = await fetch(url);
@@ -8,13 +8,11 @@ async function getData() {
             throw new Error(`Response status: ${response.status}`);
         }
 
-        const json = await response.json();
-        return json;
+        return await response.json();
     } catch (error) {
         console.error((error as Error).message);
     }
 }
-export const questsData = getData();
 
 export function getQuestGroups() {
     const questInfo = manageState.get();

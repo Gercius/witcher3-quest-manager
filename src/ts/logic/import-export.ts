@@ -1,5 +1,5 @@
-import { manageState } from "./manageState";
-import { renderCompletedPercentage } from "./render";
+import { manageState } from "./shared/manageState";
+import { renderCompletedPercentage } from "../UI/shared/renderStats";
 
 interface QuestInfo {
     id: string;
