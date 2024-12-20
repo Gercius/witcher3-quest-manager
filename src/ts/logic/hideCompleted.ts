@@ -18,8 +18,8 @@ export function handleHideCompleted() {
     });
 
     function hideCompletedQuests(hide: boolean) {
-        const questsEl: NodeListOf<HTMLElement> = document.querySelectorAll("tbody .quest");
-        questsEl.forEach((questEl) => {
+        const questEls: NodeListOf<HTMLElement> = document.querySelectorAll("tbody .quest");
+        questEls.forEach((questEl) => {
             const isQuestCompletedEl = questEl.querySelector<HTMLInputElement>(".quest-completed input");
             if (!isQuestCompletedEl) {
                 console.error("isCompletedEl not found!");
@@ -36,7 +36,7 @@ export function handleHideCompleted() {
     }
 }
 
-export function hideCompletedQuest(questCompletedCheckbox: HTMLElement) {
+export function hideCompletedQuest(id: string, completed: boolean) {
     const hideQuestsBtn = document.querySelector<HTMLInputElement>(".hide-completed .switch-btn input");
     if (!hideQuestsBtn) {
         console.error("hideQuestsBtn not found!");
@@ -44,19 +44,9 @@ export function hideCompletedQuest(questCompletedCheckbox: HTMLElement) {
     }
     if (!hideQuestsBtn.checked) return;
 
-    const questCompletedInput = questCompletedCheckbox as HTMLInputElement;
-    const questEl = questCompletedCheckbox.parentElement!.parentElement;
-    if (!questEl) {
-        console.log("questEl not found!");
-        return;
-    }
-
-    const questId = questEl.dataset.id;
-    const isQuestCompleted = questCompletedInput.checked;
-
-    const questTableRows: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-id="${questId}"]`);
+    const questTableRows: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-id="${id}"]`);
     questTableRows.forEach((rowEl) => {
-        if (isQuestCompleted) {
+        if (completed) {
             rowEl.classList.toggle("hidden-completed");
         }
     });

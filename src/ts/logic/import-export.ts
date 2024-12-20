@@ -1,11 +1,7 @@
-import { manageState } from "./shared/manageState";
+import { workingData, WorkingData } from "../shared/data";
+import { storage } from "../shared/localStorage";
+import { updateTableData } from "../shared/utils";
 import { renderCompletedPercentage } from "../UI/shared/renderStats";
-
-interface QuestInfo {
-    id: string;
-    name: string;
-    isCompleted: boolean;
-}
 
 /* 
     EXPORT 
@@ -46,24 +42,9 @@ interface QuestInfo {
     }
 
     function getQuestData() {
-        const quests: NodeListOf<HTMLElement> = document.querySelectorAll(".quest");
-        const data: QuestInfo[] = [];
-
-        quests.forEach((quest) => {
-            const id = quest.dataset.id;
-            let name = quest.querySelector(".quest-name");
-            const isCompleted = quest.querySelector<HTMLInputElement>(".quest-completed input");
-            const questInfo: QuestInfo = {
-                id: id ? id : "",
-                name: name?.textContent ? name.textContent : "",
-                isCompleted: isCompleted ? isCompleted.checked : false,
-            };
-            data.push(questInfo);
-        });
-
+        const data = storage.getAll();
         const jsonString = JSON.stringify(data, null, 2);
         const jsonBlob = new Blob([jsonString], { type: "application/json" });
-
         return jsonBlob;
     }
 })();
@@ -93,30 +74,31 @@ interface QuestInfo {
                             throw new Error("Invalid file content");
                         }
 
-                        const parsedImportData = JSON.parse(data);
-                        const questsEl: NodeListOf<HTMLElement> = document.querySelectorAll("tbody tr.quest");
+                        const parsedImportData: WorkingData[] = JSON.parse(data);
+                        validateQuests(parsedImportData);
 
-                        parsedImportData.forEach((importObj: QuestInfo) => {
-                            for (const questEl of questsEl) {
-                                const id = questEl.dataset.id;
-                                let isCompletedCheckbox =
-                                    questEl.querySelector<HTMLInputElement>(".quest-completed input");
+                        updateTableData();
+                        renderCompletedPercentage();
 
-                                if (!isCompletedCheckbox) {
-                                    console.error("Checkbox not found!");
-                                    return;
+                        function validateQuests(questData: WorkingData[]) {
+                            for (let i = 0; i < workingData.length; i++) {
+                                if (
+                                    workingData[i].name !== questData[i].name ||
+                                    workingData[i].id !== questData[i].id
+                                ) {
+                                    console.log(i);
+
+                                    console.log(workingData[i].name);
+                                    console.log(questData[i].name);
+                                    throw new Error("Quest names or ids doesn't match");
                                 }
 
-                                if (importObj.id === id) {
-                                    isCompletedCheckbox.checked = importObj.isCompleted ? true : false;
-                                }
+                                storage.saveOne(questData[i].id, questData[i].isCompleted);
                             }
-                        });
+                        }
                     } catch (error) {
-                        alert("Please import correct data");
+                        alert(`${(error as Error).message}, please import correct data!`);
                     }
-                    manageState.save();
-                    renderCompletedPercentage();
                 } else {
                     fileInput.value = "";
                 }

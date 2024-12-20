@@ -1,6 +1,6 @@
-import { originalQuestsData } from "./shared/data.ts";
+import { storage } from "./shared/localStorage.ts";
 import { handleMenu } from "./UI/menu.ts";
-import { renderQuestTable } from "./UI/shared/renderTable.ts";
+import { initialTableRender } from "./UI/shared/renderTable.ts";
 import { handleThemes } from "./UI/themes.ts";
 import { handleToggleQuestCompletion } from "./logic/complete.ts";
 import { handleHideCompleted } from "./logic/hideCompleted.ts";
@@ -8,8 +8,9 @@ import { handleSearch } from "./logic/search.ts";
 import { handleFiltering } from "./logic/filter.ts";
 
 (function main() {
+    storage.init();
     handleMenu();
-    renderQuestTable(originalQuestsData);
+    initialTableRender();
     handleThemes();
     handleToggleQuestCompletion();
     handleHideCompleted();

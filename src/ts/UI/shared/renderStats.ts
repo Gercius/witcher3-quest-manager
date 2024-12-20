@@ -1,4 +1,4 @@
-import { manageState } from "../../logic/shared/manageState";
+import { storage } from "../../shared/localStorage";
 
 export function renderCompletedPercentage() {
     const questCountEl = document.querySelector(".quest-count");
@@ -8,7 +8,7 @@ export function renderCompletedPercentage() {
         return;
     }
 
-    const questsData = manageState.get();
+    const questsData = storage.getAll();
     const totalQuests = questsData.length;
     const totalCompleted = questsData.filter((quest) => quest.isCompleted === true).length;
     const percentage = ((totalCompleted / totalQuests) * 100).toFixed(1);

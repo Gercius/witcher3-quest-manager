@@ -3,6 +3,7 @@ import { getData } from "./utils";
 export type Quests = Quest[];
 
 interface Quest {
+    id: number;
     location: string;
     questInfo: QuestInfo;
     extraDetails: ExtraDetail[];
@@ -22,8 +23,22 @@ interface ExtraDetail {
     isCompleted: boolean;
 }
 
-// Shouldn't be modified
-export const originalQuestsData = await getData();
+// Data for table rendering
+export const initialQuestData = await getData();
 
-// copy of originalQuestsData, shared and modified across the website
-export const workingData = [...originalQuestsData];
+export interface WorkingData {
+    id: number;
+    name: string;
+    isCompleted: boolean;
+}
+
+// Data for updating quests changes
+export const workingData: WorkingData[] = initialQuestData.map((quest: Quest) => {
+    return {
+        id: quest.id,
+        name: quest.questInfo.name,
+        isCompleted: quest.questInfo.isCompleted,
+    };
+});
+
+export const questIds = workingData.map((quest) => quest.id);

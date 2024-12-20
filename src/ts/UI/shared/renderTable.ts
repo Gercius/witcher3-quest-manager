@@ -1,4 +1,4 @@
-import { Quests } from "../../shared/data";
+import { initialQuestData, Quests } from "../../shared/data";
 
 interface QuestTypesMap {
     [key: string]: string;
@@ -14,19 +14,20 @@ const questTypesMap: QuestTypesMap = {
     CE: "Chance Encounter",
 };
 
-export function renderQuestTable(data: Quests) {
+export function initialTableRender() {
     const tbody = document.querySelector("main table tbody");
     if (!tbody) {
         console.error("Tbody not found!");
         return;
     }
 
+    const data: Quests = initialQuestData;
     for (let i = 0; i < data.length; i++) {
         const quest = data[i];
 
         // Main quest row
         const parentTr = document.createElement("tr");
-        parentTr.setAttribute("data-id", i.toString());
+        parentTr.setAttribute("data-id", quest.id.toString());
         const questType = quest.questInfo.type.split(" ")[0].toLowerCase();
         parentTr.setAttribute("data-type", questType);
         parentTr.classList.add("quest");
@@ -101,14 +102,14 @@ export function renderQuestTable(data: Quests) {
         }
     }
 
-    interface ExtraDetails {
+    interface ExtraDetail {
         description: string;
         hyperlink: string;
         isCompleted: boolean;
     }
 
     // todo - refactor probably
-    function getProperExtraDetail(extraDetails: ExtraDetails[], firstDetail = false, index = 0) {
+    function getProperExtraDetail(extraDetails: ExtraDetail[], firstDetail = false, index = 0) {
         const extraDetailTd = document.createElement("td");
         extraDetailTd.classList.add("extra-detail");
         if (extraDetails[firstDetail ? 0 : index]?.hyperlink && extraDetails[firstDetail ? 0 : index].description) {

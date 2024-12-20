@@ -1,4 +1,5 @@
-import { manageState } from "../logic/shared/manageState";
+import { questIds, WorkingData } from "./data";
+import { storage } from "./localStorage";
 
 export async function getData() {
     const url = "data/quests.json";
@@ -15,11 +16,24 @@ export async function getData() {
 }
 
 export function getQuestGroups() {
-    const questInfo = manageState.get();
-    const questIds = questInfo.map((quest) => quest.id);
     const questGroupsEl = [];
     for (const questId of questIds) {
         questGroupsEl.push(document.querySelectorAll(`[data-id="${questId}"]`));
     }
     return questGroupsEl;
+}
+
+export function updateTableData() {
+    for (const id of questIds) {
+        const unparsedQuest = storage.getOne(id.toString());
+        const quest: WorkingData = unparsedQuest ? JSON.parse(unparsedQuest) : [];
+
+        const questRowEl = document.querySelector(`.quest[data-id="${id}"]`);
+        if (!questRowEl) {
+            console.log("questRowEl not found!");
+            return;
+        }
+        const completedCheckbox = questRowEl.querySelector(".quest-completed input") as HTMLInputElement;
+        completedCheckbox.checked = quest.isCompleted;
+    }
 }

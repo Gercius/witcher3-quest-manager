@@ -54,15 +54,9 @@ export function handleFiltering() {
                 }
                 const isQuestCompleted = isQuestCompletedEl.checked;
                 const showQuestType = typeFiltersMap[questType as keyof typeof typeFiltersMap];
-
-                // console.log(isQuestCompleted);
-                // console.log(showQuestType);
-
                 const typeFilter = Object.values(typeFiltersMap).includes(true);
-                // console.log("completedFilter", completedFilter);
-                // console.log("TypeFilter", typeFilter);
 
-                // Show all if no iflter is checked
+                // Show all if no filter is checked
                 if (!Object.values(typeFiltersMap).includes(true) && !completedFilter) {
                     questGroup.forEach((questRowEl) => {
                         questRowEl.classList.remove("hidden-filtered", "hidden-filtered-completed");

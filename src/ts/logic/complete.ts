@@ -1,15 +1,19 @@
-import { manageState } from "./shared/manageState";
 import { renderCompletedPercentage } from "../UI/shared/renderStats";
 import { hideCompletedQuest } from "./hideCompleted";
+import { storage } from "../shared/localStorage";
+import { updateTableData } from "../shared/utils";
 
 export function handleToggleQuestCompletion() {
+    // initial handling on page load
+    updateTableData();
+    renderCompletedPercentage();
+
+    // handling on click
     const table = document.querySelector("table");
     if (!table) {
         console.error("Table element not found!");
         return;
     }
-
-    renderCompletedPercentage();
 
     table.addEventListener("click", (e) => {
         const clickedEl = e.target as HTMLElement;
@@ -19,9 +23,16 @@ export function handleToggleQuestCompletion() {
         }
 
         if (clickedEl.matches(".quest-completed input")) {
-            manageState.save();
+            const clickedQuest = clickedEl.closest(".quest") as HTMLInputElement;
+            const id = clickedQuest.dataset.id;
+            if (typeof id !== "string") {
+                console.error("id must be string!");
+                return;
+            }
+            let isCompleted = (clickedEl as HTMLInputElement).checked;
+            storage.saveOne(id, isCompleted);
             renderCompletedPercentage();
-            hideCompletedQuest(clickedEl);
+            if (isCompleted) hideCompletedQuest(id, isCompleted);
         }
     });
 }

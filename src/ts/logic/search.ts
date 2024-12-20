@@ -6,8 +6,8 @@ export function handleSearch() {
         console.error("searchInput not found!");
         return;
     }
-    let currentQuests: NodeListOf<Element>[] = [];
 
+    let currentQuests: NodeListOf<Element>[] = [];
     searchInput.addEventListener("focus", () => {
         currentQuests = getQuestGroups();
     });
