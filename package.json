@@ -2,12 +2,12 @@
     "name": "witcher3-quest-order",
     "private": true,
     "version": "0.0.0",
-    "type": "module",
     "scripts": {
         "dev": "concurrently \"vite\" \"npm run css\"",
         "build": "tsc && vite build --base=./",
         "preview": "vite preview",
-        "css": "sass --watch src/styles/sass:src/styles/css"
+        "css": "sass --watch src/styles/sass:src/styles/css",
+        "extract-quests": "node data/scripts/extract-quest-data.js"
     },
     "devDependencies": {
         "concurrently": "^9.1.0",

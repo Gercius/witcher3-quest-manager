@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Kaer Morhen (1)",
@@ -49,14 +50,11 @@
                 "hyperlink": "",
                 "isCompleted": false
             },
-            {
-                "description": "-Fall damage has now been reduced.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Fall damage has now been reduced.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 1,
         "location": "White Orchard",
         "questInfo": {
             "name": "Lilac and Gooseberries Part 1 (1)",
@@ -124,6 +122,7 @@
         ]
     },
     {
+        "id": 2,
         "location": "White Orchard",
         "questInfo": {
             "name": "Twisted Firestarter (1)",
@@ -132,15 +131,10 @@
             "orderMatters": true,
             "isCompleted": false
         },
-        "extraDetails": [
-            {
-                "description": "-Complete before the griffin.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
-        ]
+        "extraDetails": [{ "description": "-Complete before the griffin.", "hyperlink": "", "isCompleted": false }]
     },
     {
+        "id": 3,
         "location": "White Orchard",
         "questInfo": {
             "name": "A Frying Pan, Spick and Span (1)",
@@ -150,11 +144,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the griffin.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the griffin.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-Break open the door to the house before talking to the frying pan lady to get unique dialogue.",
                 "hyperlink": "",
@@ -168,6 +158,7 @@
         ]
     },
     {
+        "id": 4,
         "location": "White Orchard",
         "questInfo": {
             "name": "Precious Cargo (1)",
@@ -176,15 +167,10 @@
             "orderMatters": true,
             "isCompleted": false
         },
-        "extraDetails": [
-            {
-                "description": "-Complete before the griffin.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
-        ]
+        "extraDetails": [{ "description": "-Complete before the griffin.", "hyperlink": "", "isCompleted": false }]
     },
     {
+        "id": 5,
         "location": "White Orchard",
         "questInfo": {
             "name": "Missing in Action (1)",
@@ -194,11 +180,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the griffin.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the griffin.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-During 'Missing in Action' you can see that Dune is missing a couple fingers.",
                 "hyperlink": "",
@@ -207,6 +189,7 @@
         ]
     },
     {
+        "id": 6,
         "location": "White Orchard",
         "questInfo": {
             "name": "Devil by the Well (2)",
@@ -224,6 +207,7 @@
         ]
     },
     {
+        "id": 7,
         "location": "White Orchard",
         "questInfo": {
             "name": "On Death's Bed (2)",
@@ -246,6 +230,7 @@
         ]
     },
     {
+        "id": 8,
         "location": "White Orchard",
         "questInfo": {
             "name": "The Beast of White Orchard (3)",
@@ -283,6 +268,7 @@
         ]
     },
     {
+        "id": 9,
         "location": "White Orchard",
         "questInfo": {
             "name": "Lilac and Gooseberries Part 2 (1)",
@@ -292,14 +278,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Spawn a chort by killing a bunch of cows.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Spawn a chort by killing a bunch of cows.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 10,
         "location": "White Orchard",
         "questInfo": {
             "name": "The Incident at White Orchard (2)",
@@ -311,6 +294,7 @@
         "extraDetails": []
     },
     {
+        "id": 11,
         "location": "White Orchard",
         "questInfo": {
             "name": "Dirty Funds (2)",
@@ -322,6 +306,7 @@
         "extraDetails": []
     },
     {
+        "id": 12,
         "location": "White Orchard",
         "questInfo": {
             "name": "Deserter Gold (3)",
@@ -333,6 +318,7 @@
         "extraDetails": []
     },
     {
+        "id": 13,
         "location": "White Orchard",
         "questInfo": {
             "name": "Temerian Valuables (4)",
@@ -344,6 +330,7 @@
         "extraDetails": []
     },
     {
+        "id": 14,
         "location": "White Orchard",
         "questInfo": {
             "name": "Viper Silver Sword (Basic) (6)",
@@ -355,6 +342,7 @@
         "extraDetails": []
     },
     {
+        "id": 15,
         "location": "White Orchard",
         "questInfo": {
             "name": "Viper Steel Sword (Basic) (6)",
@@ -366,6 +354,7 @@
         "extraDetails": []
     },
     {
+        "id": 16,
         "location": "White Orchard",
         "questInfo": {
             "name": "Gwent: Collect 'em All! (1)",
@@ -377,6 +366,7 @@
         "extraDetails": []
     },
     {
+        "id": 17,
         "location": "Vizima",
         "questInfo": {
             "name": "Imperial Audience (2)",
@@ -419,6 +409,7 @@
         ]
     },
     {
+        "id": 18,
         "location": "Vizima",
         "questInfo": {
             "name": "Gwent: Collect 'em All! (1)",
@@ -436,6 +427,7 @@
         ]
     },
     {
+        "id": 19,
         "location": "Velen",
         "questInfo": {
             "name": "The Nilfgaardian Connection (5)",
@@ -473,6 +465,7 @@
         ]
     },
     {
+        "id": 20,
         "location": "Velen",
         "questInfo": {
             "name": "At the Mercy of Strangers",
@@ -495,6 +488,7 @@
         ]
     },
     {
+        "id": 21,
         "location": "Velen",
         "questInfo": {
             "name": "Man's Best Friend",
@@ -506,6 +500,7 @@
         "extraDetails": []
     },
     {
+        "id": 22,
         "location": "Velen",
         "questInfo": {
             "name": "Deadly Crossing (II)",
@@ -535,14 +530,11 @@
                 "hyperlink": "",
                 "isCompleted": false
             },
-            {
-                "description": "-Third traveling merchant spot is near Carston.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Third traveling merchant spot is near Carston.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 23,
         "location": "Velen",
         "questInfo": {
             "name": "Caravan Attack",
@@ -560,6 +552,7 @@
         ]
     },
     {
+        "id": 24,
         "location": "Velen",
         "questInfo": {
             "name": "Harassing a Troll",
@@ -577,6 +570,7 @@
         ]
     },
     {
+        "id": 25,
         "location": "Velen",
         "questInfo": {
             "name": "Looters (I)",
@@ -588,6 +582,7 @@
         "extraDetails": []
     },
     {
+        "id": 26,
         "location": "Velen",
         "questInfo": {
             "name": "Face Me if You Dare (I)",
@@ -605,6 +600,7 @@
         ]
     },
     {
+        "id": 27,
         "location": "Velen",
         "questInfo": {
             "name": "Bloody Baron (6)",
@@ -639,14 +635,11 @@
                 "hyperlink": "",
                 "isCompleted": false
             },
-            {
-                "description": "-Secret room hiding a dead body in Crow's Perch.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Secret room hiding a dead body in Crow's Perch.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 28,
         "location": "Velen",
         "questInfo": {
             "name": "Ciri's Story: The King of the Wolves (5)",
@@ -664,6 +657,7 @@
         ]
     },
     {
+        "id": 29,
         "location": "Velen",
         "questInfo": {
             "name": "Family Matters (Part 1) (5)",
@@ -706,6 +700,7 @@
         ]
     },
     {
+        "id": 30,
         "location": "Velen",
         "questInfo": {
             "name": "Ciri's Room (5)",
@@ -715,14 +710,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the Isle of the Mists.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Complete before the Isle of the Mists.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 31,
         "location": "Skellige",
         "questInfo": {
             "name": "The Mysterious Passenger (1)",
@@ -740,6 +732,7 @@
         ]
     },
     {
+        "id": 32,
         "location": "Velen",
         "questInfo": {
             "name": "Deadly Crossing (I)",
@@ -751,6 +744,7 @@
         "extraDetails": []
     },
     {
+        "id": 33,
         "location": "Velen",
         "questInfo": {
             "name": "Highway Robbery",
@@ -762,6 +756,7 @@
         "extraDetails": []
     },
     {
+        "id": 34,
         "location": "Velen",
         "questInfo": {
             "name": "Highwayman's Cache",
@@ -773,6 +768,7 @@
         "extraDetails": []
     },
     {
+        "id": 35,
         "location": "Velen",
         "questInfo": {
             "name": "A Princess in Distress (5)",
@@ -790,6 +786,7 @@
         ]
     },
     {
+        "id": 36,
         "location": "Velen",
         "questInfo": {
             "name": "Crow's Perch Fight",
@@ -807,6 +804,7 @@
         ]
     },
     {
+        "id": 37,
         "location": "Velen",
         "questInfo": {
             "name": "Thou Shalt Not Pass (7)",
@@ -824,6 +822,7 @@
         ]
     },
     {
+        "id": 38,
         "location": "Velen",
         "questInfo": {
             "name": "Deadly Crossing (III)",
@@ -835,6 +834,7 @@
         "extraDetails": []
     },
     {
+        "id": 39,
         "location": "Velen",
         "questInfo": {
             "name": "Death By Fire (10)",
@@ -844,14 +844,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete immediately when triggered.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Complete immediately when triggered.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 40,
         "location": "Velen",
         "questInfo": {
             "name": "Lynch Mob (7)",
@@ -869,6 +866,7 @@
         ]
     },
     {
+        "id": 41,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Most Truest of Basilisks",
@@ -886,6 +884,7 @@
         ]
     },
     {
+        "id": 42,
         "location": "Velen",
         "questInfo": {
             "name": "Ciri's Story: The Race (5)",
@@ -897,6 +896,7 @@
         "extraDetails": []
     },
     {
+        "id": 43,
         "location": "Velen",
         "questInfo": {
             "name": "Hunting a Witch (5)",
@@ -914,6 +914,7 @@
         ]
     },
     {
+        "id": 44,
         "location": "Velen",
         "questInfo": {
             "name": "Wandering in the Dark (6)",
@@ -936,6 +937,7 @@
         ]
     },
     {
+        "id": 45,
         "location": "Velen",
         "questInfo": {
             "name": "Magic Lamp (6)",
@@ -953,6 +955,7 @@
         ]
     },
     {
+        "id": 46,
         "location": "Velen",
         "questInfo": {
             "name": "Races: Crow's Perch (1)",
@@ -962,14 +965,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the Isle of the Mists.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Complete before the Isle of the Mists.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 47,
         "location": "Velen",
         "questInfo": {
             "name": "Hazardous Goods (5)",
@@ -992,6 +992,7 @@
         ]
     },
     {
+        "id": 48,
         "location": "Velen",
         "questInfo": {
             "name": "An Invitation from Keira Metz (6)",
@@ -1001,14 +1002,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the Isle of Mists.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Complete before the Isle of Mists.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 49,
         "location": "Velen",
         "questInfo": {
             "name": "A Towerful of Mice (6)",
@@ -1018,11 +1016,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the Isle of Mists.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the Isle of Mists.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-Mysterious female shadow that appears around Fyke Isle when you are sailing. It does not appear before or after the quest 'A Towerful of Mice', only during. There is also a weird transparent object floating near the boat that can react to igni and you'll hear a male and female scream. It seems the shadow and the transparent object appear when Keira is speaking to you with the Xenovox. The likely explanation is that the developers created an invisible npc that Keira can speak through.",
                 "hyperlink": "",
@@ -1056,6 +1050,7 @@
         ]
     },
     {
+        "id": 50,
         "location": "Velen",
         "questInfo": {
             "name": "A Favor for a Friend (6)",
@@ -1065,11 +1060,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the Isle of Mists.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the Isle of Mists.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-Keira Metz quest 'A Favour For A Friend' find corpse of driver of the food cart \n(connected with Devil By the Well).",
                 "hyperlink": "",
@@ -1078,6 +1069,7 @@
         ]
     },
     {
+        "id": 51,
         "location": "Velen",
         "questInfo": {
             "name": "For the Advancement of Learning (8)",
@@ -1100,6 +1092,7 @@
         ]
     },
     {
+        "id": 52,
         "location": "Velen",
         "questInfo": {
             "name": "Looters (II)",
@@ -1117,6 +1110,7 @@
         ]
     },
     {
+        "id": 53,
         "location": "Velen",
         "questInfo": {
             "name": "Defender of the Faith (I) (10)",
@@ -1144,6 +1138,7 @@
         ]
     },
     {
+        "id": 54,
         "location": "Velen",
         "questInfo": {
             "name": "Defender of the Faith (II) (10)",
@@ -1166,6 +1161,7 @@
         ]
     },
     {
+        "id": 55,
         "location": "Velen",
         "questInfo": {
             "name": "A Dog's Life (5)",
@@ -1183,6 +1179,7 @@
         ]
     },
     {
+        "id": 56,
         "location": "Velen",
         "questInfo": {
             "name": "The Fall of the House of Reardon (6)",
@@ -1192,16 +1189,8 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the Isle of Mists.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
-            {
-                "description": "-Find Dolores's diary and treasure.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the Isle of Mists.", "hyperlink": "", "isCompleted": false },
+            { "description": "-Find Dolores's diary and treasure.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-Check out the basement with the breakable wall AFTER completing the quest because you can get \nadditional dialogue with Dolores 2 days later. Visit Dolores at the manor two days after completing the quest \nto get some additonal dialogue and then go in the basement and speak with her again once you've found \nthe skeleton. She will then spend some time in the basement crying in front of the skeleton.",
                 "hyperlink": "https://youtu.be/2rUGRP3i5rg",
@@ -1225,6 +1214,7 @@
         ]
     },
     {
+        "id": 57,
         "location": "Velen",
         "questInfo": {
             "name": "Ghosts of the Past (6)",
@@ -1234,11 +1224,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the Isle of the Mists.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the Isle of the Mists.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-In Ghosts of the Past, you can kill Louis right away after Letho decides to leave him for dead.",
                 "hyperlink": "",
@@ -1257,6 +1243,7 @@
         ]
     },
     {
+        "id": 58,
         "location": "Velen",
         "questInfo": {
             "name": "In the Eternal Fire's Shadow (15)",
@@ -1319,6 +1306,7 @@
         ]
     },
     {
+        "id": 59,
         "location": "Velen",
         "questInfo": {
             "name": "Gwent: Velen Players (1)",
@@ -1336,6 +1324,7 @@
         ]
     },
     {
+        "id": 60,
         "location": "Velen",
         "questInfo": {
             "name": "Looters (III)",
@@ -1347,6 +1336,7 @@
         "extraDetails": []
     },
     {
+        "id": 61,
         "location": "Velen",
         "questInfo": {
             "name": "Bitter Harvest (9)",
@@ -1369,6 +1359,7 @@
         ]
     },
     {
+        "id": 62,
         "location": "Velen",
         "questInfo": {
             "name": "Fake Papers (1)",
@@ -1386,6 +1377,7 @@
         ]
     },
     {
+        "id": 63,
         "location": "Velen",
         "questInfo": {
             "name": "Ladies of the Wood (6)",
@@ -1408,6 +1400,7 @@
         ]
     },
     {
+        "id": 64,
         "location": "Velen",
         "questInfo": {
             "name": "The Whispering Hillock (5)",
@@ -1430,6 +1423,7 @@
         ]
     },
     {
+        "id": 65,
         "location": "Velen",
         "questInfo": {
             "name": "Ciri's Story: Fleeing the Bog (5)",
@@ -1447,6 +1441,7 @@
         ]
     },
     {
+        "id": 66,
         "location": "Velen",
         "questInfo": {
             "name": "Family Matters (Part 2) (5)",
@@ -1469,6 +1464,7 @@
         ]
     },
     {
+        "id": 67,
         "location": "Velen",
         "questInfo": {
             "name": "Ciri's Story: Out of the Shadows (5)",
@@ -1486,6 +1482,7 @@
         ]
     },
     {
+        "id": 68,
         "location": "Velen",
         "questInfo": {
             "name": "In Ciri's Footsteps: Velen",
@@ -1497,6 +1494,7 @@
         "extraDetails": []
     },
     {
+        "id": 69,
         "location": "Velen",
         "questInfo": {
             "name": "Return to Crookback Bog (9)",
@@ -1506,14 +1504,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the Isle of the Mists.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Complete before the Isle of the Mists.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 70,
         "location": "Velen",
         "questInfo": {
             "name": "Saving Farmer's Daughter From Soldiers (I)",
@@ -1531,6 +1526,7 @@
         ]
     },
     {
+        "id": 71,
         "location": "Velen",
         "questInfo": {
             "name": "Saving Farmer's Daughter From Soldiers (II)",
@@ -1548,6 +1544,7 @@
         ]
     },
     {
+        "id": 72,
         "location": "Velen",
         "questInfo": {
             "name": "The Truth is in the Stars (1)",
@@ -1565,6 +1562,7 @@
         ]
     },
     {
+        "id": 73,
         "location": "Velen",
         "questInfo": {
             "name": "Funeral Pyres (3)",
@@ -1582,6 +1580,7 @@
         ]
     },
     {
+        "id": 74,
         "location": "Velen",
         "questInfo": {
             "name": "Fool's Gold (6)",
@@ -1619,6 +1618,7 @@
         ]
     },
     {
+        "id": 75,
         "location": "Velen",
         "questInfo": {
             "name": "Wild at Heart (7)",
@@ -1636,6 +1636,7 @@
         ]
     },
     {
+        "id": 76,
         "location": "Velen",
         "questInfo": {
             "name": "Forefathers' Eve (7)",
@@ -1647,6 +1648,7 @@
         "extraDetails": []
     },
     {
+        "id": 77,
         "location": "Velen",
         "questInfo": {
             "name": "A Greedy God (7)",
@@ -1664,6 +1666,7 @@
         ]
     },
     {
+        "id": 78,
         "location": "Velen",
         "questInfo": {
             "name": "Last Rites (9)",
@@ -1681,6 +1684,7 @@
         ]
     },
     {
+        "id": 79,
         "location": "Velen",
         "questInfo": {
             "name": "Love's Cruel Snares (10)",
@@ -1703,6 +1707,7 @@
         ]
     },
     {
+        "id": 80,
         "location": "Velen",
         "questInfo": {
             "name": "Witcher Wannabe (10)",
@@ -1720,6 +1725,7 @@
         ]
     },
     {
+        "id": 81,
         "location": "Velen",
         "questInfo": {
             "name": "Blood Ties (12)",
@@ -1737,6 +1743,7 @@
         ]
     },
     {
+        "id": 82,
         "location": "Velen",
         "questInfo": {
             "name": "The Volunteer (13)",
@@ -1754,6 +1761,7 @@
         ]
     },
     {
+        "id": 83,
         "location": "Velen",
         "questInfo": {
             "name": "Master Armorers (24)",
@@ -1771,6 +1779,7 @@
         ]
     },
     {
+        "id": 84,
         "location": "Velen",
         "questInfo": {
             "name": "The Griffin from the Highlands (24)",
@@ -1788,6 +1797,7 @@
         ]
     },
     {
+        "id": 85,
         "location": "Velen",
         "questInfo": {
             "name": "Components for an Armorer (24)",
@@ -1805,6 +1815,7 @@
         ]
     },
     {
+        "id": 86,
         "location": "Velen",
         "questInfo": {
             "name": "The Beast of Honorton (25)",
@@ -1822,6 +1833,7 @@
         ]
     },
     {
+        "id": 87,
         "location": "Velen",
         "questInfo": {
             "name": "Where the Cat and Wolf Play (25)",
@@ -1854,6 +1866,7 @@
         ]
     },
     {
+        "id": 88,
         "location": "Velen",
         "questInfo": {
             "name": "Take What You Want (25)",
@@ -1871,6 +1884,7 @@
         ]
     },
     {
+        "id": 89,
         "location": "Velen",
         "questInfo": {
             "name": "Woodland Beast (6)",
@@ -1888,6 +1902,7 @@
         ]
     },
     {
+        "id": 90,
         "location": "Velen",
         "questInfo": {
             "name": "Patrol Gone Missing (7)",
@@ -1910,6 +1925,7 @@
         ]
     },
     {
+        "id": 91,
         "location": "Velen",
         "questInfo": {
             "name": "Shrieker (8)",
@@ -1927,6 +1943,7 @@
         ]
     },
     {
+        "id": 92,
         "location": "Velen",
         "questInfo": {
             "name": "Jenny O' the Woods (10)",
@@ -1938,6 +1955,7 @@
         "extraDetails": []
     },
     {
+        "id": 93,
         "location": "Velen",
         "questInfo": {
             "name": "The Merry Widow (10)",
@@ -1955,6 +1973,7 @@
         ]
     },
     {
+        "id": 94,
         "location": "Velen",
         "questInfo": {
             "name": "Swamp Thing (12)",
@@ -1972,6 +1991,7 @@
         ]
     },
     {
+        "id": 95,
         "location": "Velen",
         "questInfo": {
             "name": "Mysterious Tracks (20)",
@@ -1983,6 +2003,7 @@
         "extraDetails": []
     },
     {
+        "id": 96,
         "location": "Velen",
         "questInfo": {
             "name": "The Mystery of the Byways Murders (22)",
@@ -2000,6 +2021,7 @@
         ]
     },
     {
+        "id": 97,
         "location": "Velen",
         "questInfo": {
             "name": "Phantom of the Trade Route (23)",
@@ -2011,6 +2033,7 @@
         "extraDetails": []
     },
     {
+        "id": 98,
         "location": "Velen",
         "questInfo": {
             "name": "Missing Brother (33)",
@@ -2028,6 +2051,7 @@
         ]
     },
     {
+        "id": 99,
         "location": "Velen",
         "questInfo": {
             "name": "Queen Zuleyka's Treasure (1)",
@@ -2039,6 +2063,7 @@
         "extraDetails": []
     },
     {
+        "id": 100,
         "location": "Velen",
         "questInfo": {
             "name": "Lost Goods (1)",
@@ -2050,6 +2075,7 @@
         "extraDetails": []
     },
     {
+        "id": 101,
         "location": "Velen",
         "questInfo": {
             "name": "Out of the Frying Pan, Into the Fire (1)",
@@ -2061,6 +2087,7 @@
         "extraDetails": []
     },
     {
+        "id": 102,
         "location": "Velen",
         "questInfo": {
             "name": "Sunken Treasure (4)",
@@ -2072,6 +2099,7 @@
         "extraDetails": []
     },
     {
+        "id": 103,
         "location": "Velen",
         "questInfo": {
             "name": "An Unfortunate Turn of Events (4)",
@@ -2083,6 +2111,7 @@
         "extraDetails": []
     },
     {
+        "id": 104,
         "location": "Velen",
         "questInfo": {
             "name": "Sunken Chest (4)",
@@ -2094,6 +2123,7 @@
         "extraDetails": []
     },
     {
+        "id": 105,
         "location": "Velen",
         "questInfo": {
             "name": "Hidden from the World (7)",
@@ -2105,6 +2135,7 @@
         "extraDetails": []
     },
     {
+        "id": 106,
         "location": "Velen",
         "questInfo": {
             "name": "The Dead Have No Defense (9)",
@@ -2122,6 +2153,7 @@
         ]
     },
     {
+        "id": 107,
         "location": "Velen",
         "questInfo": {
             "name": "The Things Men Do For Coin... (12)",
@@ -2133,6 +2165,7 @@
         "extraDetails": []
     },
     {
+        "id": 108,
         "location": "Velen",
         "questInfo": {
             "name": "Don't Play With Gods (15)",
@@ -2155,6 +2188,7 @@
         ]
     },
     {
+        "id": 109,
         "location": "Velen",
         "questInfo": {
             "name": "Costly Mistake (18)",
@@ -2166,6 +2200,7 @@
         "extraDetails": []
     },
     {
+        "id": 110,
         "location": "Velen",
         "questInfo": {
             "name": "Blood Gold (18)",
@@ -2177,6 +2212,7 @@
         "extraDetails": []
     },
     {
+        "id": 111,
         "location": "Velen",
         "questInfo": {
             "name": "Tough Luck (18)",
@@ -2188,6 +2224,7 @@
         "extraDetails": []
     },
     {
+        "id": 112,
         "location": "Velen",
         "questInfo": {
             "name": "A Plea Ignored (28)",
@@ -2199,6 +2236,7 @@
         "extraDetails": []
     },
     {
+        "id": 113,
         "location": "Velen",
         "questInfo": {
             "name": "Dowry (32)",
@@ -2210,6 +2248,7 @@
         "extraDetails": []
     },
     {
+        "id": 114,
         "location": "Velen",
         "questInfo": {
             "name": "Griffin School Gear (Basic) (11)",
@@ -2232,6 +2271,7 @@
         ]
     },
     {
+        "id": 115,
         "location": "Velen",
         "questInfo": {
             "name": "Griffin School Part 1 (18)",
@@ -2243,6 +2283,7 @@
         "extraDetails": []
     },
     {
+        "id": 116,
         "location": "Velen",
         "questInfo": {
             "name": "Griffin School Part 2 (18)",
@@ -2254,6 +2295,7 @@
         "extraDetails": []
     },
     {
+        "id": 117,
         "location": "Velen",
         "questInfo": {
             "name": "Forgotten Wolf School Gear (Basic) (20)",
@@ -2271,6 +2313,7 @@
         ]
     },
     {
+        "id": 118,
         "location": "Velen",
         "questInfo": {
             "name": "Wolf School Part 1 (21)",
@@ -2282,6 +2325,7 @@
         "extraDetails": []
     },
     {
+        "id": 119,
         "location": "Velen",
         "questInfo": {
             "name": "Wolf School Part 5 (34)",
@@ -2293,6 +2337,7 @@
         "extraDetails": []
     },
     {
+        "id": 120,
         "location": "Velen",
         "questInfo": {
             "name": "Cat School Part 2 (23)",
@@ -2304,6 +2349,7 @@
         "extraDetails": []
     },
     {
+        "id": 121,
         "location": "Velen",
         "questInfo": {
             "name": "Cat School Part 3 (29)",
@@ -2315,6 +2361,7 @@
         "extraDetails": []
     },
     {
+        "id": 122,
         "location": "Velen",
         "questInfo": {
             "name": "Gwent: Collect 'em All! (1)",
@@ -2326,6 +2373,7 @@
         "extraDetails": []
     },
     {
+        "id": 123,
         "location": "Velen",
         "questInfo": {
             "name": "Gwent: Playing Innkeeps (1)",
@@ -2335,14 +2383,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Play Olivier in Novigrad before 'Now or Never'.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Play Olivier in Novigrad before 'Now or Never'.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 124,
         "location": "Velen",
         "questInfo": {
             "name": "Gwent: Old Pals (5)",
@@ -2354,6 +2399,7 @@
         "extraDetails": []
     },
     {
+        "id": 125,
         "location": "Velen",
         "questInfo": {
             "name": "Fists of Fury: Velen (11)",
@@ -2371,6 +2417,7 @@
         ]
     },
     {
+        "id": 126,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Racists of Novigrad (I)",
@@ -2388,6 +2435,7 @@
         ]
     },
     {
+        "id": 127,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Walk on the Waterfront (12)",
@@ -2410,6 +2458,7 @@
         ]
     },
     {
+        "id": 128,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Warehouse of Woe (13)",
@@ -2419,14 +2468,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete immediately when obtained.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Complete immediately when obtained.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 129,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Strumpet in Distress",
@@ -2444,6 +2490,7 @@
         ]
     },
     {
+        "id": 130,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Racists of Novigrad (II)",
@@ -2461,6 +2508,7 @@
         ]
     },
     {
+        "id": 131,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Karmic Justice",
@@ -2483,6 +2531,7 @@
         ]
     },
     {
+        "id": 132,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Face Me if You Dare (II)",
@@ -2494,6 +2543,7 @@
         "extraDetails": []
     },
     {
+        "id": 133,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Drunken Rabble",
@@ -2511,6 +2561,7 @@
         ]
     },
     {
+        "id": 134,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Pyres of Novigrad (10)",
@@ -2588,6 +2639,7 @@
         ]
     },
     {
+        "id": 135,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Suspicious Shakedown (10)",
@@ -2605,6 +2657,7 @@
         ]
     },
     {
+        "id": 136,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Witch Hunter Raids (I)",
@@ -2642,6 +2695,7 @@
         ]
     },
     {
+        "id": 137,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Flame of Hatred (I)",
@@ -2653,6 +2707,7 @@
         "extraDetails": []
     },
     {
+        "id": 138,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Never Trust Children (I)",
@@ -2670,6 +2725,7 @@
         ]
     },
     {
+        "id": 139,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Hidden Messages of the Nilfgaardian Kind (8)",
@@ -2687,6 +2743,7 @@
         ]
     },
     {
+        "id": 140,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Flame of Hatred (II)",
@@ -2698,6 +2755,7 @@
         "extraDetails": []
     },
     {
+        "id": 141,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Novigrad Dreaming (7)",
@@ -2720,6 +2778,7 @@
         ]
     },
     {
+        "id": 142,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Haunted House (7)",
@@ -2737,6 +2796,7 @@
         ]
     },
     {
+        "id": 143,
         "location": "Skellige",
         "questInfo": {
             "name": "Destination: Skellige (16)",
@@ -2769,6 +2829,7 @@
         ]
     },
     {
+        "id": 144,
         "location": "Skellige",
         "questInfo": {
             "name": "Flesh for Sale (12)",
@@ -2791,6 +2852,7 @@
         ]
     },
     {
+        "id": 145,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Broken Flowers (11)",
@@ -2873,6 +2935,7 @@
         ]
     },
     {
+        "id": 146,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Fencing Lessons (12)",
@@ -2892,14 +2955,11 @@
                 "hyperlink": "https://youtu.be/uCp1CLtjto8?t=697",
                 "isCompleted": false
             },
-            {
-                "description": "-The seven cats inn actually has seven cats.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-The seven cats inn actually has seven cats.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 147,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Following the Thread (11)",
@@ -2932,6 +2992,7 @@
         ]
     },
     {
+        "id": 148,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Get Junior (12)",
@@ -2959,6 +3020,7 @@
         ]
     },
     {
+        "id": 149,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Gangs of Novigrad (9)",
@@ -2976,6 +3038,7 @@
         ]
     },
     {
+        "id": 150,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Ciri's Story: Visiting Junior (9)",
@@ -2993,6 +3056,7 @@
         ]
     },
     {
+        "id": 151,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Favor for Radovid (9)",
@@ -3010,6 +3074,7 @@
         ]
     },
     {
+        "id": 152,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Honor Among Thieves (9)",
@@ -3021,6 +3086,7 @@
         "extraDetails": []
     },
     {
+        "id": 153,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Warm Welcome",
@@ -3038,6 +3104,7 @@
         ]
     },
     {
+        "id": 154,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Strangers in the Night",
@@ -3055,6 +3122,7 @@
         ]
     },
     {
+        "id": 155,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Barnful of Trouble (11)",
@@ -3064,14 +3132,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete immediately when started.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Complete immediately when started.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 156,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "An Eye for an Eye (12)",
@@ -3081,14 +3146,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the 'Isle of the Mists'.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Complete before the 'Isle of the Mists'.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 157,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Count Reuven's Treasure (12)",
@@ -3111,6 +3173,7 @@
         ]
     },
     {
+        "id": 158,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Play's the Thing (11)",
@@ -3128,6 +3191,7 @@
         ]
     },
     {
+        "id": 159,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Gwent: Playing Innkeeps (1)",
@@ -3137,14 +3201,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Play Olivier before 'Now or Never'.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Play Olivier before 'Now or Never'.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 160,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Poet Under Pressure (13)",
@@ -3177,6 +3238,7 @@
         ]
     },
     {
+        "id": 161,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Ciri's Story: Breakneck Speed (11)",
@@ -3188,6 +3250,7 @@
         "extraDetails": []
     },
     {
+        "id": 162,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "In Ciri's Footsteps: Novigrad",
@@ -3199,6 +3262,7 @@
         "extraDetails": []
     },
     {
+        "id": 163,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Dangerous Game (12)",
@@ -3208,11 +3272,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the 'Isle of the Mists'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the 'Isle of the Mists'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-When chasing Duke, you can do the quest 'A Tome Entombed' while in the sewers. It's easy to miss, but not\nmissable since you can go back in the sewers at another time.",
                 "hyperlink": "",
@@ -3223,14 +3283,11 @@
                 "hyperlink": "",
                 "isCompleted": false
             },
-            {
-                "description": "-Collect the Green Statuette at Caesar's.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Collect the Green Statuette at Caesar's.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 164,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Tome Entombed (13)",
@@ -3248,6 +3305,7 @@
         ]
     },
     {
+        "id": 165,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Cabaret (14)",
@@ -3257,11 +3315,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the 'Isle of the Mists'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the 'Isle of the Mists'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-During Cabaret, after recruiting Polly and before finishing the quest with the placards, speak with \nDandelion and you will have some unique dialogue.",
                 "hyperlink": "https://youtu.be/6Fiq6PjXaXc",
@@ -3275,6 +3329,7 @@
         ]
     },
     {
+        "id": 166,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Face Me if You Dare (III)",
@@ -3286,6 +3341,7 @@
         "extraDetails": []
     },
     {
+        "id": 167,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Nobleman Statuette (14)",
@@ -3303,6 +3359,7 @@
         ]
     },
     {
+        "id": 168,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Soldier Statuette (14)",
@@ -3320,6 +3377,7 @@
         ]
     },
     {
+        "id": 169,
         "location": "Velen",
         "questInfo": {
             "name": "Races: The Great Erasmus Vegelbud Memorial Derby (1)",
@@ -3337,6 +3395,7 @@
         ]
     },
     {
+        "id": 170,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Matter of Life and Death (12)",
@@ -3389,6 +3448,7 @@
         ]
     },
     {
+        "id": 171,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Witch Hunter Raids (II)",
@@ -3406,6 +3466,7 @@
         ]
     },
     {
+        "id": 172,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Novigrad, Closed City I (11)",
@@ -3428,6 +3489,7 @@
         ]
     },
     {
+        "id": 173,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Novigrad, Closed City II (1)",
@@ -3445,6 +3507,7 @@
         ]
     },
     {
+        "id": 174,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Carnal Sins (16)",
@@ -3459,11 +3522,7 @@
                 "hyperlink": "",
                 "isCompleted": false
             },
-            {
-                "description": "-Complete before the 'Isle of the Mists'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the 'Isle of the Mists'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-In the 'Carnal Sins' quest, inspect corpse genitals twice for a unique line.",
                 "hyperlink": "",
@@ -3482,6 +3541,7 @@
         ]
     },
     {
+        "id": 175,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Now or Never (14)",
@@ -3491,11 +3551,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the 'Isle of the Mists'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the 'Isle of the Mists'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-When Triss leaves her Novigrad residence during Now or Never quest, her landlords can be seen \nrummaging through her things (before you join up with Triss).",
                 "hyperlink": "",
@@ -3519,6 +3575,7 @@
         ]
     },
     {
+        "id": 176,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Deadly Plot (14)",
@@ -3551,6 +3608,7 @@
         ]
     },
     {
+        "id": 177,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Gwent: Playing Thaler (1)",
@@ -3568,6 +3626,7 @@
         ]
     },
     {
+        "id": 178,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Price of Passage (I)",
@@ -3590,6 +3649,7 @@
         ]
     },
     {
+        "id": 179,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Oxenfurt Drunk (26)",
@@ -3612,6 +3672,7 @@
         ]
     },
     {
+        "id": 180,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Price of Passage (II)",
@@ -3629,6 +3690,7 @@
         ]
     },
     {
+        "id": 181,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Price of Passage (III)",
@@ -3646,6 +3708,7 @@
         ]
     },
     {
+        "id": 182,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Rough Neighborhood (10)",
@@ -3668,6 +3731,7 @@
         ]
     },
     {
+        "id": 183,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Creature from the Oxenfurt Forest (35)",
@@ -3695,6 +3759,7 @@
         ]
     },
     {
+        "id": 184,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Message from an Old Friend (1)",
@@ -3706,6 +3771,7 @@
         "extraDetails": []
     },
     {
+        "id": 185,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Empty Coop (1)",
@@ -3723,6 +3789,7 @@
         ]
     },
     {
+        "id": 186,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Dwarven Document Dilemma (2)",
@@ -3734,6 +3801,7 @@
         "extraDetails": []
     },
     {
+        "id": 187,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Hey, You Wanna Look at My Stuff? (6)",
@@ -3751,6 +3819,7 @@
         ]
     },
     {
+        "id": 188,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Novigrad Hospitality (8)",
@@ -3762,6 +3831,7 @@
         "extraDetails": []
     },
     {
+        "id": 189,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Of Dairy and Darkness (9)",
@@ -3789,6 +3859,7 @@
         ]
     },
     {
+        "id": 190,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Spooked Mare (12)",
@@ -3806,6 +3877,7 @@
         ]
     },
     {
+        "id": 191,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Black Pearl (13)",
@@ -3817,6 +3889,7 @@
         "extraDetails": []
     },
     {
+        "id": 192,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Little Red (15)",
@@ -3828,6 +3901,7 @@
         "extraDetails": []
     },
     {
+        "id": 193,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Feast for Crows (20)",
@@ -3839,6 +3913,7 @@
         "extraDetails": []
     },
     {
+        "id": 194,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Of Swords and Dumplings (24)",
@@ -3866,6 +3941,7 @@
         ]
     },
     {
+        "id": 195,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "A Final Kindness (26)",
@@ -3883,6 +3959,7 @@
         ]
     },
     {
+        "id": 196,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "An Elusive Thief (13)",
@@ -3900,6 +3977,7 @@
         ]
     },
     {
+        "id": 197,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Apiarian Phantom (14)",
@@ -3922,6 +4000,7 @@
         ]
     },
     {
+        "id": 198,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The White Lady (16)",
@@ -3933,6 +4012,7 @@
         "extraDetails": []
     },
     {
+        "id": 199,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Doors Slamming Shut (24)",
@@ -3955,6 +4035,7 @@
         ]
     },
     {
+        "id": 200,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Lord of the Wood (25)",
@@ -3977,6 +4058,7 @@
         ]
     },
     {
+        "id": 201,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Coast of Wrecks (13)",
@@ -3988,6 +4070,7 @@
         "extraDetails": []
     },
     {
+        "id": 202,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Battlefield Loot (20)",
@@ -3999,6 +4082,7 @@
         "extraDetails": []
     },
     {
+        "id": 203,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Cat School Gear (Basic) (17)",
@@ -4016,6 +4100,7 @@
         ]
     },
     {
+        "id": 204,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Cat School Part 1 (23)",
@@ -4027,6 +4112,7 @@
         "extraDetails": []
     },
     {
+        "id": 205,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Gwent: Collect 'em All! (1)",
@@ -4038,6 +4124,7 @@
         "extraDetails": []
     },
     {
+        "id": 206,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Gwent: Big City Players (1)",
@@ -4055,6 +4142,7 @@
         ]
     },
     {
+        "id": 207,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Gwent: Old Pals (5)",
@@ -4066,6 +4154,7 @@
         "extraDetails": []
     },
     {
+        "id": 208,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Gwent: High Stakes (26)",
@@ -4077,6 +4166,7 @@
         "extraDetails": []
     },
     {
+        "id": 209,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Fists of Fury: Novigrad (23)",
@@ -4088,6 +4178,7 @@
         "extraDetails": []
     },
     {
+        "id": 210,
         "location": "Skellige",
         "questInfo": {
             "name": "Hard Times (21)",
@@ -4105,6 +4196,7 @@
         ]
     },
     {
+        "id": 211,
         "location": "Skellige",
         "questInfo": {
             "name": "The King is Dead - Long Live the King (16)",
@@ -4157,6 +4249,7 @@
         ]
     },
     {
+        "id": 212,
         "location": "Skellige",
         "questInfo": {
             "name": "Worthy of Trust (1)",
@@ -4184,6 +4277,7 @@
         ]
     },
     {
+        "id": 213,
         "location": "Skellige",
         "questInfo": {
             "name": "Echoes of the Past (17)",
@@ -4201,6 +4295,7 @@
         ]
     },
     {
+        "id": 214,
         "location": "Skellige",
         "questInfo": {
             "name": "Taken as a Lass (25)",
@@ -4218,6 +4313,7 @@
         ]
     },
     {
+        "id": 215,
         "location": "Skellige",
         "questInfo": {
             "name": "Missing Persons (15)",
@@ -4240,6 +4336,7 @@
         ]
     },
     {
+        "id": 216,
         "location": "Skellige",
         "questInfo": {
             "name": "Nameless (14)",
@@ -4257,6 +4354,7 @@
         ]
     },
     {
+        "id": 217,
         "location": "Skellige",
         "questInfo": {
             "name": "The Calm Before the Storm (14)",
@@ -4268,6 +4366,7 @@
         "extraDetails": []
     },
     {
+        "id": 218,
         "location": "Skellige",
         "questInfo": {
             "name": "In Ciri's Footsteps: Skellige",
@@ -4279,6 +4378,7 @@
         "extraDetails": []
     },
     {
+        "id": 219,
         "location": "Velen/Novigrad/Skellige",
         "questInfo": {
             "name": "In Ciri's Footsteps",
@@ -4290,6 +4390,7 @@
         "extraDetails": []
     },
     {
+        "id": 220,
         "location": "Skellige",
         "questInfo": {
             "name": "In Wolf's Clothing (15)",
@@ -4307,6 +4408,7 @@
         ]
     },
     {
+        "id": 221,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Redania's Most Wanted (12)",
@@ -4316,11 +4418,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before the 'Isle of the Mists'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before the 'Isle of the Mists'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-All green checkmarks for 'Redania's Most Wanted' objectives. There are two options in the reddit post. The \nbest way is to show Yen the crystal right after 'Last Wish' (she disappears if you walk out of the room after \n'Last Wish', so speak with her righ\"&\"t away), but don't give it to her. Don't talk with Triss about the crystal\nat all since it will for some reason make one of the objectives fail. Bring Radovid the crystal and give it \nto him. Even though you didn't show Triss the crystal, it will still ma\"&\"rk it as complete. If you showed both \nTriss and Yen, for some reason it'll mark the Yen portion as failed.\")",
                 "hyperlink": "",
@@ -4334,6 +4432,7 @@
         ]
     },
     {
+        "id": 222,
         "location": "Skellige",
         "questInfo": {
             "name": "The Last Wish (15)",
@@ -4343,11 +4442,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before 'Ugly Baby'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before 'Ugly Baby'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-During 'The Last Wish', while investigating the second shipwreck, you can find 'pirate booty' further down with \nsome funny dialogue.",
                 "hyperlink": "",
@@ -4366,6 +4461,7 @@
         ]
     },
     {
+        "id": 223,
         "location": "Skellige",
         "questInfo": {
             "name": "Yustianna Disturbed",
@@ -4383,6 +4479,7 @@
         ]
     },
     {
+        "id": 224,
         "location": "Skellige",
         "questInfo": {
             "name": "Finders Keepers (24)",
@@ -4400,6 +4497,7 @@
         ]
     },
     {
+        "id": 225,
         "location": "Skellige",
         "questInfo": {
             "name": "Call of the Wild",
@@ -4417,6 +4515,7 @@
         ]
     },
     {
+        "id": 226,
         "location": "Skellige",
         "questInfo": {
             "name": "Siren's Call",
@@ -4439,6 +4538,7 @@
         ]
     },
     {
+        "id": 227,
         "location": "Skellige",
         "questInfo": {
             "name": "Never Trust Children (II)",
@@ -4456,6 +4556,7 @@
         ]
     },
     {
+        "id": 228,
         "location": "Skellige",
         "questInfo": {
             "name": "The Phantom of Eldberg (17)",
@@ -4488,6 +4589,7 @@
         ]
     },
     {
+        "id": 229,
         "location": "Skellige",
         "questInfo": {
             "name": "Stranger in a Strange Land (14)",
@@ -4505,6 +4607,7 @@
         ]
     },
     {
+        "id": 230,
         "location": "Skellige",
         "questInfo": {
             "name": "The Cave of Dreams (14)",
@@ -4532,6 +4635,7 @@
         ]
     },
     {
+        "id": 231,
         "location": "Skellige",
         "questInfo": {
             "name": "An Unpaid Debt (15)",
@@ -4549,6 +4653,7 @@
         ]
     },
     {
+        "id": 232,
         "location": "Skellige",
         "questInfo": {
             "name": "Farting Trolls",
@@ -4566,6 +4671,7 @@
         ]
     },
     {
+        "id": 233,
         "location": "Skellige",
         "questInfo": {
             "name": "Possession (17)",
@@ -4583,6 +4689,7 @@
         ]
     },
     {
+        "id": 234,
         "location": "Skellige",
         "questInfo": {
             "name": "The Lord of Undvik (17)",
@@ -4592,11 +4699,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before 'Battle Preparations'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before 'Battle Preparations'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-'Lord of Undvik', optimal order guide to follow.",
                 "hyperlink": "",
@@ -4630,6 +4733,7 @@
         ]
     },
     {
+        "id": 235,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Deadly Delights (15)",
@@ -4639,11 +4743,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Spare her to get the sword Maugrim.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Spare her to get the sword Maugrim.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-In the contract, 'Deadly Delights', you will meet a succubus named Salma. You can also find her name in the \ncreepy cult house found near one of the sign posts in White Orchard.",
                 "hyperlink": "https://youtu.be/SaheseNLfzs?t=669",
@@ -4657,6 +4757,7 @@
         ]
     },
     {
+        "id": 236,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Out on Your Arse! (14)",
@@ -4674,6 +4775,7 @@
         ]
     },
     {
+        "id": 237,
         "location": "Skellige",
         "questInfo": {
             "name": "Woe is Me",
@@ -4685,6 +4787,7 @@
         "extraDetails": []
     },
     {
+        "id": 238,
         "location": "Skellige",
         "questInfo": {
             "name": "King's Gambit (18)",
@@ -4694,11 +4797,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before 'Battle Preparations'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before 'Battle Preparations'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-During King's Gambit quest, after helping Hjalmer and Cerys. During the coronation argument, before \nreporting to Crach, go find Cerys when she is walking away @0:48.",
                 "hyperlink": "",
@@ -4737,6 +4836,7 @@
         ]
     },
     {
+        "id": 239,
         "location": "Skellige",
         "questInfo": {
             "name": "Coronation (18)",
@@ -4746,11 +4846,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Complete before 'Battle Preparations'.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Complete before 'Battle Preparations'.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-Right after 'Coronation', you can talk with Cerys, Hjalmer, Crach, Udalryk, and Ermion.",
                 "hyperlink": "",
@@ -4759,6 +4855,7 @@
         ]
     },
     {
+        "id": 240,
         "location": "Skellige",
         "questInfo": {
             "name": "The Four Faces of Hemdall",
@@ -4781,6 +4878,7 @@
         ]
     },
     {
+        "id": 241,
         "location": "Skellige",
         "questInfo": {
             "name": "Brave Fools Die Young (1)",
@@ -4798,6 +4896,7 @@
         ]
     },
     {
+        "id": 242,
         "location": "Skellige",
         "questInfo": {
             "name": "Iron Maiden (19)",
@@ -4815,6 +4914,7 @@
         ]
     },
     {
+        "id": 243,
         "location": "Skellige",
         "questInfo": {
             "name": "Fists of Fury: Skellige (30)",
@@ -4832,6 +4932,7 @@
         ]
     },
     {
+        "id": 244,
         "location": "Skellige",
         "questInfo": {
             "name": "A Hallowed Horn (12)",
@@ -4843,6 +4944,7 @@
         "extraDetails": []
     },
     {
+        "id": 245,
         "location": "Skellige",
         "questInfo": {
             "name": "From a Land Far, Far Away (13)",
@@ -4865,6 +4967,7 @@
         ]
     },
     {
+        "id": 246,
         "location": "Skellige",
         "questInfo": {
             "name": "Free Spirit (13)",
@@ -4887,6 +4990,7 @@
         ]
     },
     {
+        "id": 247,
         "location": "Skellige",
         "questInfo": {
             "name": "Nithing (14)",
@@ -4904,6 +5008,7 @@
         ]
     },
     {
+        "id": 248,
         "location": "Skellige",
         "questInfo": {
             "name": "Master of the Arena (14)",
@@ -4915,6 +5020,7 @@
         "extraDetails": []
     },
     {
+        "id": 249,
         "location": "Skellige",
         "questInfo": {
             "name": "The Price of Honor (14)",
@@ -4942,6 +5048,7 @@
         ]
     },
     {
+        "id": 250,
         "location": "Skellige",
         "questInfo": {
             "name": "The Family Blade (15)",
@@ -4953,6 +5060,7 @@
         "extraDetails": []
     },
     {
+        "id": 251,
         "location": "Skellige",
         "questInfo": {
             "name": "For Fame and Glory (15)",
@@ -4970,6 +5078,7 @@
         ]
     },
     {
+        "id": 252,
         "location": "Skellige",
         "questInfo": {
             "name": "Armed Assault (15)",
@@ -4981,6 +5090,7 @@
         "extraDetails": []
     },
     {
+        "id": 253,
         "location": "Skellige",
         "questInfo": {
             "name": "A Bard's Beloved (15)",
@@ -4992,6 +5102,7 @@
         "extraDetails": []
     },
     {
+        "id": 254,
         "location": "Skellige",
         "questInfo": {
             "name": "The Path of Warriors (16)",
@@ -5009,6 +5120,7 @@
         ]
     },
     {
+        "id": 255,
         "location": "Skellige",
         "questInfo": {
             "name": "Crime and Punishment (18)",
@@ -5031,6 +5143,7 @@
         ]
     },
     {
+        "id": 256,
         "location": "Skellige",
         "questInfo": {
             "name": "Shock Therapy (24)",
@@ -5042,6 +5155,7 @@
         "extraDetails": []
     },
     {
+        "id": 257,
         "location": "Skellige",
         "questInfo": {
             "name": "Practicum in Advanced Alchemy (24)",
@@ -5053,6 +5167,7 @@
         "extraDetails": []
     },
     {
+        "id": 258,
         "location": "Skellige",
         "questInfo": {
             "name": "Abandoned Sawmill (24)",
@@ -5064,6 +5179,7 @@
         "extraDetails": []
     },
     {
+        "id": 259,
         "location": "Skellige",
         "questInfo": {
             "name": "Peace Disturbed (25)",
@@ -5075,6 +5191,7 @@
         "extraDetails": []
     },
     {
+        "id": 260,
         "location": "Skellige",
         "questInfo": {
             "name": "The Sad Tale of the Grossbart Brothers (26)",
@@ -5092,6 +5209,7 @@
         ]
     },
     {
+        "id": 261,
         "location": "Skellige",
         "questInfo": {
             "name": "The Tower Outta Nowheres (30)",
@@ -5103,6 +5221,7 @@
         "extraDetails": []
     },
     {
+        "id": 262,
         "location": "Skellige",
         "questInfo": {
             "name": "Strange Beast (16)",
@@ -5120,6 +5239,7 @@
         ]
     },
     {
+        "id": 263,
         "location": "Skellige",
         "questInfo": {
             "name": "Muire D'yaeblen (18)",
@@ -5131,6 +5251,7 @@
         "extraDetails": []
     },
     {
+        "id": 264,
         "location": "Skellige",
         "questInfo": {
             "name": "Here Comes the Groom (19)",
@@ -5142,6 +5263,7 @@
         "extraDetails": []
     },
     {
+        "id": 265,
         "location": "Skellige",
         "questInfo": {
             "name": "In the Heart of the Woods (22)",
@@ -5159,6 +5281,7 @@
         ]
     },
     {
+        "id": 266,
         "location": "Skellige",
         "questInfo": {
             "name": "Missing Miners (27)",
@@ -5170,6 +5293,7 @@
         "extraDetails": []
     },
     {
+        "id": 267,
         "location": "Skellige",
         "questInfo": {
             "name": "Dragon (28)",
@@ -5192,6 +5316,7 @@
         ]
     },
     {
+        "id": 268,
         "location": "Skellige",
         "questInfo": {
             "name": "Skellige's Most Wanted (29)",
@@ -5214,6 +5339,7 @@
         ]
     },
     {
+        "id": 269,
         "location": "Skellige",
         "questInfo": {
             "name": "Missing Son (29)",
@@ -5231,6 +5357,7 @@
         ]
     },
     {
+        "id": 270,
         "location": "Skellige",
         "questInfo": {
             "name": "Freya Be Praised! (4)",
@@ -5242,6 +5369,7 @@
         "extraDetails": []
     },
     {
+        "id": 271,
         "location": "Skellige",
         "questInfo": {
             "name": "Not Only Eagles Dare (10)",
@@ -5253,6 +5381,7 @@
         "extraDetails": []
     },
     {
+        "id": 272,
         "location": "Skellige",
         "questInfo": {
             "name": "X Marks the Spot (12)",
@@ -5264,6 +5393,7 @@
         "extraDetails": []
     },
     {
+        "id": 273,
         "location": "Skellige",
         "questInfo": {
             "name": "Family Fortune (13)",
@@ -5275,6 +5405,7 @@
         "extraDetails": []
     },
     {
+        "id": 274,
         "location": "Skellige",
         "questInfo": {
             "name": "Pearls of the Coast (13)",
@@ -5286,6 +5417,7 @@
         "extraDetails": []
     },
     {
+        "id": 275,
         "location": "Skellige",
         "questInfo": {
             "name": "Nilfgaardian Treasure (13)",
@@ -5297,6 +5429,7 @@
         "extraDetails": []
     },
     {
+        "id": 276,
         "location": "Skellige",
         "questInfo": {
             "name": "Precious Haul (13)",
@@ -5308,6 +5441,7 @@
         "extraDetails": []
     },
     {
+        "id": 277,
         "location": "Skellige",
         "questInfo": {
             "name": "Shortcut (13)",
@@ -5319,6 +5453,7 @@
         "extraDetails": []
     },
     {
+        "id": 278,
         "location": "Skellige",
         "questInfo": {
             "name": "Ironsides' Treasure (13)",
@@ -5330,6 +5465,7 @@
         "extraDetails": []
     },
     {
+        "id": 279,
         "location": "Skellige",
         "questInfo": {
             "name": "Inheritance (14)",
@@ -5341,6 +5477,7 @@
         "extraDetails": []
     },
     {
+        "id": 280,
         "location": "Skellige",
         "questInfo": {
             "name": "Ruins, Hidden Treasure, You Know... (18)",
@@ -5352,6 +5489,7 @@
         "extraDetails": []
     },
     {
+        "id": 281,
         "location": "Skellige",
         "questInfo": {
             "name": "Hidden in the Depths (31)",
@@ -5363,6 +5501,7 @@
         "extraDetails": []
     },
     {
+        "id": 282,
         "location": "Skellige",
         "questInfo": {
             "name": "Unlucky's Treasure (48)",
@@ -5374,6 +5513,7 @@
         "extraDetails": []
     },
     {
+        "id": 283,
         "location": "Skellige",
         "questInfo": {
             "name": "Ursine School Gear (Basic) (20)",
@@ -5385,6 +5525,7 @@
         "extraDetails": []
     },
     {
+        "id": 284,
         "location": "Skellige",
         "questInfo": {
             "name": "Ursine School Part 1 (25)",
@@ -5396,6 +5537,7 @@
         "extraDetails": []
     },
     {
+        "id": 285,
         "location": "Skellige",
         "questInfo": {
             "name": "Ursine School Part 2 (25)",
@@ -5413,6 +5555,7 @@
         ]
     },
     {
+        "id": 286,
         "location": "Skellige",
         "questInfo": {
             "name": "Ursine School Part 3 (30)",
@@ -5424,6 +5567,7 @@
         "extraDetails": []
     },
     {
+        "id": 287,
         "location": "Skellige",
         "questInfo": {
             "name": "Ursine School Part 4 (34)",
@@ -5435,6 +5579,7 @@
         "extraDetails": []
     },
     {
+        "id": 288,
         "location": "Skellige",
         "questInfo": {
             "name": "Cat School Part 4 (34)",
@@ -5446,6 +5591,7 @@
         "extraDetails": []
     },
     {
+        "id": 289,
         "location": "Skellige",
         "questInfo": {
             "name": "Griffin School Part 3 (26)",
@@ -5463,6 +5609,7 @@
         ]
     },
     {
+        "id": 290,
         "location": "Skellige",
         "questInfo": {
             "name": "Griffin School Part 4 (34)",
@@ -5480,6 +5627,7 @@
         ]
     },
     {
+        "id": 291,
         "location": "Skellige",
         "questInfo": {
             "name": "Wolf School Part 3 (29)",
@@ -5491,6 +5639,7 @@
         "extraDetails": []
     },
     {
+        "id": 292,
         "location": "Skellige",
         "questInfo": {
             "name": "Wolf School Part 6 (34)",
@@ -5502,6 +5651,7 @@
         "extraDetails": []
     },
     {
+        "id": 293,
         "location": "Skellige",
         "questInfo": {
             "name": "Gwent: Collect 'em All! (1)",
@@ -5513,6 +5663,7 @@
         "extraDetails": []
     },
     {
+        "id": 294,
         "location": "Skellige",
         "questInfo": {
             "name": "Gwent: Skellige Style (1)",
@@ -5524,6 +5675,7 @@
         "extraDetails": []
     },
     {
+        "id": 295,
         "location": "Skellige",
         "questInfo": {
             "name": "Fists of Fury: Champion of Champions (11)",
@@ -5541,6 +5693,7 @@
         ]
     },
     {
+        "id": 296,
         "location": "Skellige",
         "questInfo": {
             "name": "The Heroes' Pursuits: Fayrlund (1)",
@@ -5552,6 +5705,7 @@
         "extraDetails": []
     },
     {
+        "id": 297,
         "location": "Skellige",
         "questInfo": {
             "name": "The Heroes' Pursuits: Fyresdal (1)",
@@ -5563,6 +5717,7 @@
         "extraDetails": []
     },
     {
+        "id": 298,
         "location": "Skellige",
         "questInfo": {
             "name": "The Heroes' Pursuits: Kaer Trolde (1)",
@@ -5574,6 +5729,7 @@
         "extraDetails": []
     },
     {
+        "id": 299,
         "location": "Skellige",
         "questInfo": {
             "name": "The Heroes' Pursuits: For the Goddess' Glory! (1)",
@@ -5585,6 +5741,7 @@
         "extraDetails": []
     },
     {
+        "id": 300,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Ugly Baby (19)",
@@ -5607,6 +5764,7 @@
         ]
     },
     {
+        "id": 301,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Disturbance (1)",
@@ -5624,6 +5782,7 @@
         ]
     },
     {
+        "id": 302,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "To Bait a Forktail... (19)",
@@ -5641,6 +5800,7 @@
         ]
     },
     {
+        "id": 303,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "The Final Trial (19)",
@@ -5723,6 +5883,7 @@
         ]
     },
     {
+        "id": 304,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Gwent: Old Pals (5)",
@@ -5740,6 +5901,7 @@
         ]
     },
     {
+        "id": 305,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Berengar's Blade (27)",
@@ -5762,6 +5924,7 @@
         ]
     },
     {
+        "id": 306,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Trail of Echoes",
@@ -5773,6 +5936,7 @@
         "extraDetails": []
     },
     {
+        "id": 307,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "No Place Like Home (19)",
@@ -5800,6 +5964,7 @@
         ]
     },
     {
+        "id": 308,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Va Fail Elaine (19)",
@@ -5811,6 +5976,7 @@
         "extraDetails": []
     },
     {
+        "id": 309,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Bastion (23)",
@@ -5833,6 +5999,7 @@
         ]
     },
     {
+        "id": 310,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Monster Slayer (26)",
@@ -5850,6 +6017,7 @@
         ]
     },
     {
+        "id": 311,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Greenhouse Effect (27)",
@@ -5867,6 +6035,7 @@
         ]
     },
     {
+        "id": 312,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "The Witchers' Forge (30)",
@@ -5884,6 +6053,7 @@
         ]
     },
     {
+        "id": 313,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Wolf School Gear (Basic) (14)",
@@ -5895,6 +6065,7 @@
         "extraDetails": []
     },
     {
+        "id": 314,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Wolf School Part 2 (21)",
@@ -5906,6 +6077,7 @@
         "extraDetails": []
     },
     {
+        "id": 315,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Wolf School Part 4 (29)",
@@ -5917,6 +6089,7 @@
         "extraDetails": []
     },
     {
+        "id": 316,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Forgotten Wolf School Gear Part 1 (34)",
@@ -5928,6 +6101,7 @@
         "extraDetails": []
     },
     {
+        "id": 317,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Forgotten Wolf School Gear Part 2 (40)",
@@ -5939,6 +6113,7 @@
         "extraDetails": []
     },
     {
+        "id": 318,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Gwent: Collect 'em All! (1)",
@@ -5950,6 +6125,7 @@
         "extraDetails": []
     },
     {
+        "id": 319,
         "location": "Velen",
         "questInfo": {
             "name": "Brothers in Arms: Velen (22)",
@@ -5967,6 +6143,7 @@
         ]
     },
     {
+        "id": 320,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Brothers in Arms: Novigrad (22)",
@@ -5984,6 +6161,7 @@
         ]
     },
     {
+        "id": 321,
         "location": "Vizima",
         "questInfo": {
             "name": "Brothers in Arms: Nilfgaard (22)",
@@ -5995,6 +6173,7 @@
         "extraDetails": []
     },
     {
+        "id": 322,
         "location": "Skellige",
         "questInfo": {
             "name": "Brothers in Arms: Skellige (22)",
@@ -6012,6 +6191,7 @@
         ]
     },
     {
+        "id": 323,
         "location": "Skellige",
         "questInfo": {
             "name": "The Isle of Mists (22)",
@@ -6044,6 +6224,7 @@
         ]
     },
     {
+        "id": 324,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "The Battle of Kaer Morhen (24)",
@@ -6096,6 +6277,7 @@
         ]
     },
     {
+        "id": 325,
         "location": "Kaer Morhen",
         "questInfo": {
             "name": "Blood on the Battlefield (20)",
@@ -6123,6 +6305,7 @@
         ]
     },
     {
+        "id": 326,
         "location": "Velen",
         "questInfo": {
             "name": "Bald Mountain (26)",
@@ -6170,6 +6353,7 @@
         ]
     },
     {
+        "id": 327,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Final Preparations (1)",
@@ -6179,14 +6363,11 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Let Ciri go and talk to the sorceresses alone.",
-                "hyperlink": "",
-                "isCompleted": false
-            }
+            { "description": "-Let Ciri go and talk to the sorceresses alone.", "hyperlink": "", "isCompleted": false }
         ]
     },
     {
+        "id": 328,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "It Takes Three to Tango (28)",
@@ -6204,6 +6385,7 @@
         ]
     },
     {
+        "id": 329,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Blindingly Obvious (28)",
@@ -6231,6 +6413,7 @@
         ]
     },
     {
+        "id": 330,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Reason of State (30)",
@@ -6253,6 +6436,7 @@
         ]
     },
     {
+        "id": 331,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "The Great Escape (28)",
@@ -6270,6 +6454,7 @@
         ]
     },
     {
+        "id": 332,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Payback (28)",
@@ -6281,6 +6466,7 @@
         "extraDetails": []
     },
     {
+        "id": 333,
         "location": "Novigrad/Oxenfurt",
         "questInfo": {
             "name": "Through Time and Space (26)",
@@ -6292,6 +6478,7 @@
         "extraDetails": []
     },
     {
+        "id": 334,
         "location": "Skellige",
         "questInfo": {
             "name": "Battle Preparations (28)",
@@ -6303,6 +6490,7 @@
         "extraDetails": []
     },
     {
+        "id": 335,
         "location": "Skellige",
         "questInfo": {
             "name": "The Sunstone (28)",
@@ -6325,6 +6513,7 @@
         ]
     },
     {
+        "id": 336,
         "location": "Skellige",
         "questInfo": {
             "name": "Veni Vidi Vigo (28)",
@@ -6342,6 +6531,7 @@
         ]
     },
     {
+        "id": 337,
         "location": "Skellige",
         "questInfo": {
             "name": "Child of the Elder Blood (31)",
@@ -6364,6 +6554,7 @@
         ]
     },
     {
+        "id": 338,
         "location": "Skellige",
         "questInfo": {
             "name": "Skjall's Grave (28)",
@@ -6375,6 +6566,7 @@
         "extraDetails": []
     },
     {
+        "id": 339,
         "location": "Skellige",
         "questInfo": {
             "name": "On Thin Ice (30)",
@@ -6402,6 +6594,7 @@
         ]
     },
     {
+        "id": 340,
         "location": "Skellige",
         "questInfo": {
             "name": "Tedd Deireadh, The Final Age (30)",
@@ -6424,6 +6617,7 @@
         ]
     },
     {
+        "id": 341,
         "location": "White Orchard",
         "questInfo": {
             "name": "Faithful Friend (30)",
@@ -6441,6 +6635,7 @@
         ]
     },
     {
+        "id": 342,
         "location": "White Orchard",
         "questInfo": {
             "name": "Something Ends, Something Begins (30)",
@@ -6483,6 +6678,7 @@
         ]
     },
     {
+        "id": 343,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Evil's First Soft Touches (32)",
@@ -6505,6 +6701,7 @@
         ]
     },
     {
+        "id": 344,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Dead Man's Party (33)",
@@ -6652,6 +6849,7 @@
         ]
     },
     {
+        "id": 345,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "The Cursed Chapel (34)",
@@ -6674,6 +6872,7 @@
         ]
     },
     {
+        "id": 346,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "A Midnight Clear (33)",
@@ -6691,6 +6890,7 @@
         ]
     },
     {
+        "id": 347,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Viper Armour Set (34)",
@@ -6713,6 +6913,7 @@
         ]
     },
     {
+        "id": 348,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Venomous Viper Steel Sword (34)",
@@ -6730,6 +6931,7 @@
         ]
     },
     {
+        "id": 349,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Open Sesame! Part 1 (34)",
@@ -6779,11 +6981,7 @@
                 "hyperlink": "",
                 "isCompleted": false
             },
-            {
-                "description": "-Buy all items at the auction. ",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Buy all items at the auction. ", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-Bird at the auction can be disassembled and will start a quest. The painting will start another quest and can be \nsold for a trophy in a jar.",
                 "hyperlink": "",
@@ -6812,6 +7010,7 @@
         ]
     },
     {
+        "id": 350,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Open Sesame: The Safecracker (34)",
@@ -6844,6 +7043,7 @@
         ]
     },
     {
+        "id": 351,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Open Sesame: Breaking and Entering (34)",
@@ -6861,6 +7061,7 @@
         ]
     },
     {
+        "id": 352,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Open Sesame: Witcher Seasonings",
@@ -6872,6 +7073,7 @@
         "extraDetails": []
     },
     {
+        "id": 353,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Open Sesame! Part 2: The Heist",
@@ -6929,6 +7131,7 @@
         ]
     },
     {
+        "id": 354,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "A Dark Legacy (34)",
@@ -6946,6 +7149,7 @@
         ]
     },
     {
+        "id": 355,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Avid Collector (34)",
@@ -6973,6 +7177,7 @@
         ]
     },
     {
+        "id": 356,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Scenes From a Marriage (35)",
@@ -7005,6 +7210,7 @@
         ]
     },
     {
+        "id": 357,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Venomous Viper Silver Sword  (36)",
@@ -7022,6 +7228,7 @@
         ]
     },
     {
+        "id": 358,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Whatsoever a Man Soweth (36)",
@@ -7089,6 +7296,7 @@
         ]
     },
     {
+        "id": 359,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Enchanting: Start-up Costs (32)",
@@ -7100,6 +7308,7 @@
         "extraDetails": []
     },
     {
+        "id": 360,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Enchanting: Quality Has Its Price (32)",
@@ -7122,6 +7331,7 @@
         ]
     },
     {
+        "id": 361,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "The Taxman Cometh (32)",
@@ -7139,6 +7349,7 @@
         ]
     },
     {
+        "id": 362,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Without a Trace (32)",
@@ -7166,6 +7377,7 @@
         ]
     },
     {
+        "id": 363,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Roses on a Red Field (33)",
@@ -7183,6 +7395,7 @@
         ]
     },
     {
+        "id": 364,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Tinker, Hunter, Soldier, Spy (33)",
@@ -7194,6 +7407,7 @@
         "extraDetails": []
     },
     {
+        "id": 365,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "From Ofier's Distant Shores (33)",
@@ -7211,6 +7425,7 @@
         ]
     },
     {
+        "id": 366,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "The Royal Air Force (36)",
@@ -7233,6 +7448,7 @@
         ]
     },
     {
+        "id": 367,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "The Sword, Famine and Perfidy (36)",
@@ -7244,6 +7460,7 @@
         "extraDetails": []
     },
     {
+        "id": 368,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "The Secret Life of Count Romilly (38)",
@@ -7255,6 +7472,7 @@
         "extraDetails": []
     },
     {
+        "id": 369,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "The Drakenborg Redemption (38)",
@@ -7272,6 +7490,7 @@
         ]
     },
     {
+        "id": 370,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "A Surprise Inheritance (38)",
@@ -7283,6 +7502,7 @@
         "extraDetails": []
     },
     {
+        "id": 371,
         "location": "Hearts of Stone",
         "questInfo": {
             "name": "Races: Swift as the Western Winds (32)",
@@ -7294,6 +7514,7 @@
         "extraDetails": []
     },
     {
+        "id": 372,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Envoys, Wineboys (34)",
@@ -7331,6 +7552,7 @@
         ]
     },
     {
+        "id": 373,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Beast of Toussaint (35)",
@@ -7418,6 +7640,7 @@
         ]
     },
     {
+        "id": 374,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Blood Run (36)",
@@ -7440,6 +7663,7 @@
         ]
     },
     {
+        "id": 375,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "No Place Like Home (34)",
@@ -7462,6 +7686,7 @@
         ]
     },
     {
+        "id": 376,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Turn and Face the Strange (35)",
@@ -7494,6 +7719,7 @@
         ]
     },
     {
+        "id": 377,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "There Can Be Only One (43)",
@@ -7511,6 +7737,7 @@
         ]
     },
     {
+        "id": 378,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Fists of Fury: Toussaint (40)",
@@ -7533,6 +7760,7 @@
         ]
     },
     {
+        "id": 379,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Raging Wolf (40)",
@@ -7555,6 +7783,7 @@
         ]
     },
     {
+        "id": 380,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Wine Wars: Belgaard Part 1 (39)",
@@ -7577,6 +7806,7 @@
         ]
     },
     {
+        "id": 381,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Wine Wars: Coronata (37)",
@@ -7594,6 +7824,7 @@
         ]
     },
     {
+        "id": 382,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Wine Wars: Vermentino (37)",
@@ -7611,6 +7842,7 @@
         ]
     },
     {
+        "id": 383,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Wine Wars: The Deus in the Machina (42)",
@@ -7628,6 +7860,7 @@
         ]
     },
     {
+        "id": 384,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Wine Wars: Consorting (40)",
@@ -7645,6 +7878,7 @@
         ]
     },
     {
+        "id": 385,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Wine Wars: Belgaard Part 2 (39)",
@@ -7662,6 +7896,7 @@
         ]
     },
     {
+        "id": 386,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Warble of a Smitten Knight (35)",
@@ -7724,6 +7959,7 @@
         ]
     },
     {
+        "id": 387,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Last Exploits of Selina's Gang (37)",
@@ -7746,6 +7982,7 @@
         ]
     },
     {
+        "id": 388,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Till Death Do You Part (36)",
@@ -7798,6 +8035,7 @@
         ]
     },
     {
+        "id": 389,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Bovine Blues (38)",
@@ -7820,6 +8058,7 @@
         ]
     },
     {
+        "id": 390,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Extreme Cosplay (40)",
@@ -7847,6 +8086,7 @@
         ]
     },
     {
+        "id": 391,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "La Cage au Fou (39)",
@@ -7866,11 +8106,7 @@
                 "hyperlink": "https://youtu.be/xHcg-V8cWZw?t=569",
                 "isCompleted": false
             },
-            {
-                "description": "-Find Regis's note beside his bed.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Find Regis's note beside his bed.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-During 'La Cage Au Fou', after speaking with Regis and before searching for the Wight for the first time, go back \ninto Regis's lair and you can find him as a wisp of smoke and he will also have some unique dialogue if you try \nspeaking to him while he's in human form.",
                 "hyperlink": "",
@@ -7894,6 +8130,7 @@
         ]
     },
     {
+        "id": 392,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Spoontaneous Profits! (42)",
@@ -7921,6 +8158,7 @@
         ]
     },
     {
+        "id": 393,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Amidst the Mill's Grist (42)",
@@ -7938,6 +8176,7 @@
         ]
     },
     {
+        "id": 394,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Hunger Game (42)",
@@ -7960,6 +8199,7 @@
         ]
     },
     {
+        "id": 395,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Where Children Toil, Toys Waste Away (42)",
@@ -8007,6 +8247,7 @@
         ]
     },
     {
+        "id": 396,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Wine is Sacred (42)",
@@ -8029,6 +8270,7 @@
         ]
     },
     {
+        "id": 397,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "A Portrait of the Witcher as an Old Man (43)",
@@ -8066,6 +8308,7 @@
         ]
     },
     {
+        "id": 398,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Of Sheers and a Witcher I Sing (43)",
@@ -8088,6 +8331,7 @@
         ]
     },
     {
+        "id": 399,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Man from Cintra (43)",
@@ -8115,6 +8359,7 @@
         ]
     },
     {
+        "id": 400,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Capture the Castle (47)",
@@ -8147,6 +8392,7 @@
         ]
     },
     {
+        "id": 401,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Night of Long Fangs (47)",
@@ -8199,6 +8445,7 @@
         ]
     },
     {
+        "id": 402,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Duck, Duck, Goosed! (47)",
@@ -8221,6 +8468,7 @@
         ]
     },
     {
+        "id": 403,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Beyond Hill and Dale... (47)",
@@ -8298,6 +8546,7 @@
         ]
     },
     {
+        "id": 404,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Tesham Mutna (49)",
@@ -8309,6 +8558,7 @@
         "extraDetails": []
     },
     {
+        "id": 405,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Pomp and Strange Circumstance (49)",
@@ -8346,6 +8596,7 @@
         ]
     },
     {
+        "id": 406,
         "location": "Blood and Wine",
         "questInfo": {
             "name": {
@@ -8356,22 +8607,13 @@
                             "bold": true,
                             "underline": true,
                             "size": 10,
-                            "color": {
-                                "theme": 1
-                            },
+                            "color": { "theme": 1 },
                             "name": "Arial"
                         },
                         "text": "B) "
                     },
                     {
-                        "font": {
-                            "underline": true,
-                            "size": 10,
-                            "color": {
-                                "theme": 1
-                            },
-                            "name": "Arial"
-                        },
+                        "font": { "underline": true, "size": 10, "color": { "theme": 1 }, "name": "Arial" },
                         "text": "Burlap is the New Stripe (49)"
                     }
                 ]
@@ -8399,6 +8641,7 @@
         ]
     },
     {
+        "id": 407,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Perks of Being a Jailbird (49)",
@@ -8416,6 +8659,7 @@
         ]
     },
     {
+        "id": 408,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Using Your Loaf (-)",
@@ -8433,6 +8677,7 @@
         ]
     },
     {
+        "id": 409,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Be It Ever So Humble... (49)",
@@ -8465,6 +8710,7 @@
         ]
     },
     {
+        "id": 410,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Blood Simple (47)",
@@ -8487,6 +8733,7 @@
         ]
     },
     {
+        "id": 411,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "What Lies Unseen (47)",
@@ -8519,6 +8766,7 @@
         ]
     },
     {
+        "id": 412,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Tesham Mutna (49)",
@@ -8530,6 +8778,7 @@
         "extraDetails": []
     },
     {
+        "id": 413,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Pomp and Strange Circumstance (49)",
@@ -8567,6 +8816,7 @@
         ]
     },
     {
+        "id": 414,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Be It Ever So Humble... (49)",
@@ -8599,6 +8849,7 @@
         ]
     },
     {
+        "id": 415,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Paperchase (36)",
@@ -8621,6 +8872,7 @@
         ]
     },
     {
+        "id": 416,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Goodness, Gracious, Great Balls of Granite! (36)",
@@ -8648,6 +8900,7 @@
         ]
     },
     {
+        "id": 417,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Father Knows Worst (37)",
@@ -8670,6 +8923,7 @@
         ]
     },
     {
+        "id": 418,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "A Knight's Tales (40)",
@@ -8687,6 +8941,7 @@
         ]
     },
     {
+        "id": 419,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Big Feet to Fill (40)",
@@ -8704,6 +8959,7 @@
         ]
     },
     {
+        "id": 420,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Big Feet to Fill: The First Group (40)",
@@ -8721,6 +8977,7 @@
         ]
     },
     {
+        "id": 421,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Big Feet to Fill: The Second Group (40)",
@@ -8732,6 +8989,7 @@
         "extraDetails": []
     },
     {
+        "id": 422,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Big Feet to Fill: The Third Group (40)",
@@ -8743,6 +9001,7 @@
         "extraDetails": []
     },
     {
+        "id": 423,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Big Feet to Fill: The Fourth Group (40)",
@@ -8754,6 +9013,7 @@
         "extraDetails": []
     },
     {
+        "id": 424,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Big Feet to Fill: The Fifth Group (40)",
@@ -8765,6 +9025,7 @@
         "extraDetails": []
     },
     {
+        "id": 425,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Master Master Master Master! (40)",
@@ -8776,6 +9037,7 @@
         "extraDetails": []
     },
     {
+        "id": 426,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Words of the Prophets Are Written on Sarcophagi (40)",
@@ -8787,6 +9049,7 @@
         "extraDetails": []
     },
     {
+        "id": 427,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Mutual of Beauclair's Wild Kingdom (46)",
@@ -8809,6 +9072,7 @@
         ]
     },
     {
+        "id": 428,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Knight for Hire (-)",
@@ -8826,6 +9090,7 @@
         ]
     },
     {
+        "id": 429,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Big Game Hunter (37)",
@@ -8853,6 +9118,7 @@
         ]
     },
     {
+        "id": 430,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Vitner's Contract: Rivecalme Storehouse (37)",
@@ -8870,6 +9136,7 @@
         ]
     },
     {
+        "id": 431,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Vitner's Contract: Chuchote Cave (40)",
@@ -8887,6 +9154,7 @@
         ]
     },
     {
+        "id": 432,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Vitner's Contract: Cleaning Those Hard-to-Reach Places (40)",
@@ -8904,6 +9172,7 @@
         ]
     },
     {
+        "id": 433,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Vitner's Contract: Dun Tynne Hillside (40)",
@@ -8915,6 +9184,7 @@
         "extraDetails": []
     },
     {
+        "id": 434,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Vitner's Contract: Duchaton Crest (43)",
@@ -8926,6 +9196,7 @@
         "extraDetails": []
     },
     {
+        "id": 435,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Equine Phantoms (44)",
@@ -8978,6 +9249,7 @@
         ]
     },
     {
+        "id": 436,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Feet as Cold as Ice (45)",
@@ -8995,6 +9267,7 @@
         ]
     },
     {
+        "id": 437,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Tufo Monster (48)",
@@ -9012,6 +9285,7 @@
         ]
     },
     {
+        "id": 438,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Coin Doesn't Stink (37)",
@@ -9029,6 +9303,7 @@
         ]
     },
     {
+        "id": 439,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Don't Take Candy from a Stranger (37)",
@@ -9040,6 +9315,7 @@
         "extraDetails": []
     },
     {
+        "id": 440,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Black Widow (37)",
@@ -9051,6 +9327,7 @@
         "extraDetails": []
     },
     {
+        "id": 441,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Inconstant Gardener (37)",
@@ -9062,6 +9339,7 @@
         "extraDetails": []
     },
     {
+        "id": 442,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Applied Escapology (40)",
@@ -9073,6 +9351,7 @@
         "extraDetails": []
     },
     {
+        "id": 443,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Around the World in...Eight Days (40)",
@@ -9084,6 +9363,7 @@
         "extraDetails": []
     },
     {
+        "id": 444,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Waiting for Goe and Doh (40)",
@@ -9095,6 +9375,7 @@
         "extraDetails": []
     },
     {
+        "id": 445,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "But Other Than That, How Did You Enjoy the Play? (43)",
@@ -9106,6 +9387,7 @@
         "extraDetails": []
     },
     {
+        "id": 446,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "What Was This About Again? (43)",
@@ -9117,6 +9399,7 @@
         "extraDetails": []
     },
     {
+        "id": 447,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Curse of Carnarvon (46)",
@@ -9128,6 +9411,7 @@
         "extraDetails": []
     },
     {
+        "id": 448,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Suffering of Young Francois (47)",
@@ -9150,6 +9434,7 @@
         ]
     },
     {
+        "id": 449,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "The Toussaint Prison Experient (47)",
@@ -9161,6 +9446,7 @@
         "extraDetails": []
     },
     {
+        "id": 450,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Filibert Always Pays His Debts (48)",
@@ -9178,6 +9464,7 @@
         ]
     },
     {
+        "id": 451,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Grandmaster Feline Gear (40)",
@@ -9187,11 +9474,7 @@
             "isCompleted": false
         },
         "extraDetails": [
-            {
-                "description": "-Find a book in the Knight Errant's office.",
-                "hyperlink": "",
-                "isCompleted": false
-            },
+            { "description": "-Find a book in the Knight Errant's office.", "hyperlink": "", "isCompleted": false },
             {
                 "description": "-Here is a video link showing all the dye options for the Grandmaster Feline School Gear.",
                 "hyperlink": "https://youtu.be/BmF_URHCYm0",
@@ -9200,6 +9483,7 @@
         ]
     },
     {
+        "id": 452,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Grandmaster Griffin Gear (40)",
@@ -9222,6 +9506,7 @@
         ]
     },
     {
+        "id": 453,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Grandmaster Manticore Gear (40)",
@@ -9244,6 +9529,7 @@
         ]
     },
     {
+        "id": 454,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Grandmaster Ursine Gear (40)",
@@ -9261,6 +9547,7 @@
         ]
     },
     {
+        "id": 455,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Grandmaster Wolven Gear (40)",
@@ -9278,6 +9565,7 @@
         ]
     },
     {
+        "id": 456,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Gwent: Never Fear, Skellige's Here (1)",
@@ -9300,6 +9588,7 @@
         ]
     },
     {
+        "id": 457,
         "location": "Blood and Wine",
         "questInfo": {
             "name": "Gwent: To Everything - Turn, Turn, Tournament! (38)",

@@ -4,7 +4,7 @@ const fs = require("node:fs");
 const excelFilePath = "data/data.xlsx";
 
 const workbook = new ExcelJS.Workbook();
-const quests = [];
+let quests = [];
 let quest = null;
 let currentQuestName = null;
 
@@ -79,11 +79,19 @@ workbook.xlsx.readFile(excelFilePath).then(() => {
         }
     }
 
-    fs.writeFile("quests.json", JSON.stringify(quests, null, 2), (err) => {
+    // Add ids
+    quests = quests.map((quest, index) => {
+        return {
+            id: index,
+            ...quest,
+        };
+    });
+
+    fs.writeFile("data/extracted-quests.json", JSON.stringify(quests), (err) => {
         if (err) {
             console.error("Error writing to file", err);
         } else {
-            console.log("quests.json has been saved successfully.");
+            console.log("extracted-quests.json has been saved successfully.");
         }
     });
 
