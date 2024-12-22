@@ -74,7 +74,12 @@ import { renderCompletedPercentage } from "../UI/shared/renderStats";
                             throw new Error("Invalid file content");
                         }
 
-                        const parsedImportData: WorkingData[] = JSON.parse(data);
+                        let parsedImportData: WorkingData[];
+                        try {
+                            parsedImportData = JSON.parse(data);
+                        } catch {
+                            throw new Error("Uploaded file is not in JSON format.");
+                        }
                         validateQuests(parsedImportData);
 
                         updateTableData();
