@@ -57,6 +57,7 @@ export function initialTableRender() {
         if (!quest.questInfo.orderMatters) {
             const questOrderNoMatterImg = document.createElement("img");
             questOrderNoMatterImg.src = "imgs/kekw.jpg";
+            questOrderNoMatterImg.alt = 'Risitas kekw meme'
             nameTd.appendChild(questOrderNoMatterImg);
         }
 

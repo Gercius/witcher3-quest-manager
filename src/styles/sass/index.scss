@@ -12,7 +12,7 @@
 
 html,
 body {
-    overflow-x: hidden;
+    background-color: var(--bg);
 }
 
 // Utility classes
@@ -29,7 +29,15 @@ body {
     text-align: center;
 }
 
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
     background-color: salmon;
 
     @media (min-width: 1150px) {
@@ -109,7 +117,7 @@ header {
         }
 
         .menu {
-            color: var(--text);
+            color: #000;
 
             > li {
                 height: 65px;
@@ -307,6 +315,10 @@ main {
         border-collapse: collapse;
         font-size: 16px;
 
+        @media (min-width: 761px) {
+            border: 1px solid;
+        }
+
         thead tr th {
             padding: 6px;
             border: 1px solid;
@@ -363,7 +375,6 @@ main {
                 position: absolute;
                 top: -9999px;
                 left: -9999px;
-                // display: none;
             }
 
             tr.quest {
@@ -408,16 +419,19 @@ main {
         Label the data
         */
 
-            td:nth-of-type(1):before {
+            td.location:before {
                 content: "Location";
+                font-weight: 700;
             }
 
-            td:nth-of-type(2):before {
+            td.quest-name:before {
                 content: "Quest";
+                font-weight: 700;
             }
 
-            td:nth-of-type(3):before {
+            td.quest-completed:before {
                 content: "Completed";
+                font-weight: 700;
             }
 
             tr .extra-detail::before {

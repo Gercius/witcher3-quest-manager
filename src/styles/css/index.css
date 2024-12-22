@@ -53,7 +53,7 @@ button {
 
 html,
 body {
-  overflow-x: hidden;
+  background-color: var(--bg);
 }
 
 .hidden,
@@ -68,7 +68,15 @@ body {
   text-align: center;
 }
 
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
   background-color: salmon;
 }
 @media (min-width: 1150px) {
@@ -144,7 +152,7 @@ header .menu-wrapper {
   }
 }
 header .menu-wrapper .menu {
-  color: var(--text);
+  color: #000;
 }
 header .menu-wrapper .menu > li {
   height: 65px;
@@ -319,6 +327,11 @@ main table {
   border-collapse: collapse;
   font-size: 16px;
 }
+@media (min-width: 761px) {
+  main table {
+    border: 1px solid;
+  }
+}
 main table thead tr th {
   padding: 6px;
   border: 1px solid;
@@ -404,14 +417,17 @@ main table td img {
   main table td.quest-completed {
     text-align: unset;
   }
-  main table td:nth-of-type(1):before {
+  main table td.location:before {
     content: "Location";
+    font-weight: 700;
   }
-  main table td:nth-of-type(2):before {
+  main table td.quest-name:before {
     content: "Quest";
+    font-weight: 700;
   }
-  main table td:nth-of-type(3):before {
+  main table td.quest-completed:before {
     content: "Completed";
+    font-weight: 700;
   }
   main table tr .extra-detail::before {
     position: static;
