@@ -23,7 +23,8 @@ export function handleThemes() {
         }
         toggleThemeButton.checked = storedTheme === "dark";
     } else {
-        preferDarkTheme ? main.classList.add("dark-theme") : "";
+        main.classList.add("dark-theme");
+        body.classList.add("dark-theme");
         toggleThemeButton.checked = preferDarkTheme;
     }
 
